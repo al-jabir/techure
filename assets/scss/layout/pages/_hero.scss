@@ -7,6 +7,11 @@
   &-area {
     padding-top: 75px;
   }
+  &-image {
+    @media #{$md,$xs} {
+      margin-bottom: 40px;
+    }
+  }
   &-social {
     top: 50%;
     transform: translateY(-50%);
