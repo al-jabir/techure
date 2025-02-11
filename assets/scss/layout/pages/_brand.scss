@@ -1,0 +1,25 @@
+@use '../../utils/' as *;
+/*----------------------------------------*/
+/*   Brand */
+/*----------------------------------------*/
+.aj-brand {
+  &-img {
+    & span {
+      height: 81px;
+      width: 81px;
+      line-height: 80px;
+      text-align: center;
+      border-radius: 50%;
+      background-color: #6850bf;
+      margin: 0 41px;
+    }
+  }
+  &-title {
+    font-family: var(--aj-font-heading);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 73.4071px;
+    letter-spacing: -2.03908px;
+    color: var(--aj-white-color-2);
+  }
+}

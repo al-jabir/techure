@@ -1,0 +1,27 @@
+@use '../utils/' as *;
+
+/*----------------------------------------*/
+/*   Btn
+/*----------------------------------------*/
+.aj-btn {
+  padding: 20px 30px;
+  font-family: 'DM Sans';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.25px;
+  color: var(--aj-white-color);
+  background-color: var(--aj-primary-color);
+  border-radius: 999px;
+  transition: 0.3s;
+  &:hover {
+    color: #fff;
+  }
+
+  &-x {
+    color: #fff;
+    background-color: var(--aj-primary-color);
+    padding: 20px;
+    border-radius: 100%;
+  }
+}

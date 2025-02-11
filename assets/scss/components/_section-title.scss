@@ -1,0 +1,25 @@
+@use '../utils/' as *;
+
+/*----------------------------------------*/
+/*   Section Title */
+/*----------------------------------------*/
+
+.aj-section-title {
+  &__heading {
+    font-size: 72px;
+    color: var(--aj-heading-color);
+    font-family: var(--aj-font-heading);
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: -2px;
+  }
+  &__subtitle {
+    font-size: 18px;
+    color: var(--aj-heading-color);
+    font-family: var(--aj-font-heading);
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+}

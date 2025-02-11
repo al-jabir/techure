@@ -1,0 +1,45 @@
+@use '../../utils/' as *;
+
+/*----------------------------------------*/
+/*   Process */
+/*----------------------------------------*/
+
+.aj-process {
+  &-item {
+    border-right: 1px solid rgba(7, 0, 14, 0.2);
+    border-bottom: 1px solid rgba(7, 0, 14, 0.2);
+    padding: 0 40px 40px 0;
+
+    &__number {
+      font-feature-settings: 'liga' off, 'clig' off;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: var(--aj-body-color);
+      font-family: var(--aj-font-heading);
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 34.91px;
+      letter-spacing: -0.25px;
+    }
+    &__head {
+      display: flex;
+      align-items: center;
+    }
+    &__title {
+      font-family: var(--aj-font-heading);
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 34.91px;
+      letter-spacing: -0.25px;
+    }
+    &__content {
+      & p {
+        font-family: var(--aj-font-heading);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28.01px;
+      }
+    }
+  }
+}

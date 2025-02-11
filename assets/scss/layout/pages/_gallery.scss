@@ -1,0 +1,38 @@
+@use '../../utils/' as *;
+
+/*----------------------------------------*/
+/*   Gallery */
+/*----------------------------------------*/
+
+.aj-gallery {
+  &-items {
+    position: relative;
+    & a {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      color: var(--aj-white-color);
+      font-family: var(--aj-font-heading);
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      background-color: var(--aj-heading-color);
+      border-radius: 10px;
+      padding: 5px 20px;
+      transition: 0.3s;
+      &:hover {
+        background-color: var(--aj-primary-color);
+      }
+    }
+    & h3 {
+      font-size: 24px;
+
+      letter-spacing: -0.25px;
+    }
+  }
+  &-img {
+    & img {
+      border-radius: 20px;
+    }
+  }
+}

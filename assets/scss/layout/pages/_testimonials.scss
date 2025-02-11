@@ -1,0 +1,42 @@
+@use '../../utils/' as *;
+
+/*----------------------------------------*/
+/*   Testimonials */
+/*----------------------------------------*/
+.aj-testimonials {
+  &-item {
+    border: 1px solid var(--aj-primary-color-2);
+    border-radius: 20px;
+    padding: 40px;
+    &__info {
+      &-name {
+        font-family: var(--aj-font-heading);
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 34.91px;
+        letter-spacing: -0.25px;
+      }
+    }
+    &__line {
+      border-bottom: 1px solid #ececec;
+    }
+    &__thumb {
+      & img {
+        border-radius: 50%;
+      }
+    }
+    &__content {
+      &-desc {
+        font-size: 32px;
+        font-family: var(--aj-font-heading);
+        font-weight: 500;
+        line-height: 44px;
+      }
+      &-rating {
+        & i {
+          color: #ffb34e;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "techure",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass --watch assets/scss/style.scss:assets/css/style.css"
+  },
+  "keywords": [],
+  "author": "al-jabir",
+  "license": "ISC",
+  "description": "this is charity website template"
+}

@@ -1,0 +1,55 @@
+@use '../../utils/' as *;
+
+/*----------------------------------------*/
+/*   Header */
+/*----------------------------------------*/
+
+.aj-header {
+  &-area {
+    background-color: #f7f1fc;
+  }
+  &-left {
+    margin-left: 140px;
+    padding: 21px 0;
+  }
+  &-menu {
+    & nav {
+      & ul {
+        display: flex;
+        & li {
+          margin-right: 24px;
+          & a {
+            color: var(--aj-heading-color);
+            font-size: 18px;
+            font-weight: 700;
+            transition: 0.3s;
+            &:hover {
+              color: var(--aj-primary-color);
+            }
+          }
+        }
+      }
+    }
+  }
+  &-phone {
+    & a {
+      color: var(--aj-heading-color);
+      & i {
+        color: var(--aj-primary-color);
+        margin-right: 10px;
+      }
+    }
+  }
+  &-bars {
+    & i {
+      color: var(--aj-white-color);
+      height: 51px;
+      width: 51px;
+      line-height: 50px;
+      text-align: center;
+      background-color: var(--aj-primary-color);
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  }
+}

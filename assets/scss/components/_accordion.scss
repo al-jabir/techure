@@ -1,0 +1,62 @@
+@use '../utils/' as *;
+
+.aj-accordion {
+  &-wrapper {
+    padding: 20px 0;
+  }
+
+  &-header {
+    margin: 0;
+  }
+  &-button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 30px;
+    font-size: 18px;
+    font-family: var(--aj-font-heading);
+    font-weight: 700;
+    padding-bottom: 20px;
+    color: #fff;
+    padding-left: 0;
+    &::after {
+      content: '-';
+      height: 40px;
+      width: 40px;
+      line-height: 40px;
+      border-radius: 50%;
+      color: #fff;
+      background-color: #6851bf;
+    }
+    &.collapsed {
+      border-bottom: 1px solid #ffffff26;
+      padding-left: 0;
+
+      &::after {
+        content: '+';
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #fff;
+        background-color: #6851bf;
+      }
+    }
+    & span {
+      color: var(--aj-theme-color);
+    }
+    &.collapsed {
+      & span {
+        color: var(--aj-body-color);
+        transform: rotate(-90deg);
+      }
+    }
+  }
+  &-body {
+    border-bottom: 1px solid #ffffff26;
+    margin: 0;
+    & p {
+      color: #fff;
+    }
+  }
+}

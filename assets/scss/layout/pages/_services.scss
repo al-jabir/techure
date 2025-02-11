@@ -1,0 +1,40 @@
+@use '../../utils/' as *;
+
+/*----------------------------------------*/
+/*   Services */
+/*----------------------------------------*/
+.aj-services {
+  &-item {
+    padding: 40px 30px 45px 60px;
+    border-radius: 20px;
+    border: 1px solid rgba(7, 0, 14, 0.2);
+    &__icon {
+      width: 80px;
+      height: 80px;
+      background-color: var(--aj-white-color);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 20px;
+      top: 50%;
+      left: -40px;
+      transform: translateY(-50%);
+    }
+    &__title {
+      font-family: var(--aj-font-heading);
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 35px;
+      letter-spacing: -0.25px;
+    }
+    & a {
+      font-size: 18px;
+      color: var(--aj-heading-color);
+      font-family: var(--aj-font-heading);
+      font-weight: 700;
+      letter-spacing: -0.25px;
+    }
+  }
+}
