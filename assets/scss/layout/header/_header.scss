@@ -7,10 +7,16 @@
 .aj-header {
   &-area {
     background-color: #f7f1fc;
+    @media #{$lg,$md,$xs} {
+      padding: 10px 0;
+    }
   }
   &-left {
     margin-left: 140px;
     padding: 21px 0;
+    @media #{$lg,$md,$xs} {
+      margin-left: 0;
+    }
   }
   &-menu {
     & nav {

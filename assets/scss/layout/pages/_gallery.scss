@@ -5,6 +5,11 @@
 /*----------------------------------------*/
 
 .aj-gallery {
+  &-area {
+    @media #{$md,$xs} {
+      padding: 50px 0;
+    }
+  }
   &-items {
     position: relative;
     & a {
@@ -26,8 +31,10 @@
     }
     & h3 {
       font-size: 24px;
-
       letter-spacing: -0.25px;
+      @media #{$xs} {
+        font-size: 20px;
+      }
     }
   }
   &-img {

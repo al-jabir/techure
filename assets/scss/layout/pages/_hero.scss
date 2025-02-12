@@ -7,11 +7,7 @@
   &-area {
     padding-top: 75px;
   }
-  &-image {
-    @media #{$md,$xs} {
-      margin-bottom: 40px;
-    }
-  }
+
   &-social {
     top: 50%;
     transform: translateY(-50%);
@@ -21,6 +17,9 @@
     }
   }
   &-title {
+    @media #{$md,$xs} {
+      margin-bottom: 30px;
+    }
     & span {
       font-weight: 700;
     }
@@ -31,7 +30,14 @@
     font-size: 90px;
     font-weight: 200;
     line-height: 1;
+    @media #{$xs} {
+      font-size: 46px;
+      & br {
+        display: none;
+      }
+    }
   }
+
   &-video {
     & a {
       & img {
@@ -110,5 +116,3 @@
     }
   }
 }
-
-// shape

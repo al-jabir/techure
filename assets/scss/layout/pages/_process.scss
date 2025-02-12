@@ -6,9 +6,37 @@
 
 .aj-process {
   &-item {
-    border-right: 1px solid rgba(7, 0, 14, 0.2);
-    border-bottom: 1px solid rgba(7, 0, 14, 0.2);
+    border: 1px solid rgba(7, 0, 14, 0.2);
+    border-top: none;
+    border-left: none;
     padding: 0 40px 40px 0;
+
+    @media #{$xs} {
+      border: none;
+      padding: 10px 15px;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      margin-bottom: 20px;
+    }
+    &-2 {
+      border-top: none;
+      border-right: none;
+      padding: 0 0 40px 40px;
+    }
+    &-3 {
+      border-left: 1px solid rgba(7, 0, 14, 0.2);
+      border-bottom: none;
+      margin-left: -1px;
+      margin-top: -1px;
+      padding: 40px 40px 0 40px;
+    }
+    &-4 {
+      border-top: 1px solid rgba(7, 0, 14, 0.2);
+      border-right: none;
+      border-bottom: none;
+      margin-left: -1px;
+      margin-top: -1px;
+      padding: 40px 40px 0 40px;
+    }
 
     &__number {
       font-feature-settings: 'liga' off, 'clig' off;
@@ -20,6 +48,12 @@
       font-weight: 700;
       line-height: 34.91px;
       letter-spacing: -0.25px;
+      @media #{$md} {
+        font-size: 17px;
+      }
+      @media #{$xs} {
+        font-size: 13px;
+      }
     }
     &__head {
       display: flex;
@@ -31,6 +65,12 @@
       font-weight: 700;
       line-height: 34.91px;
       letter-spacing: -0.25px;
+      @media #{$md} {
+        font-size: 17px;
+      }
+      @media #{$xs} {
+        font-size: 13px;
+      }
     }
     &__content {
       & p {

@@ -7,6 +7,9 @@
   &-img {
     & img {
       border-radius: 20px;
+      @media #{$md,$xs} {
+        width: 100%;
+      }
     }
   }
   &-content {
@@ -20,8 +23,20 @@
         background-color: #f7f1fc;
         border-radius: 20px;
         margin-bottom: 30px;
+        @media #{$md,$xs} {
+          margin-bottom: 10px;
+        }
+        @media #{$lg} {
+          font-size: 13px;
+        }
+        @media #{$xs} {
+          font-size: 15px;
+        }
         & i {
           margin-right: 20px;
+          @media #{$xs} {
+            margin-right: 10px;
+          }
         }
       }
     }

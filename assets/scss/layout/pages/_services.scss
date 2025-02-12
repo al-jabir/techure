@@ -4,6 +4,11 @@
 /*   Services */
 /*----------------------------------------*/
 .aj-services {
+  &-area {
+    @media #{$md,$xs} {
+      padding: 50px 0;
+    }
+  }
   &-item {
     padding: 40px 30px 45px 60px;
     border-radius: 20px;

@@ -5,6 +5,12 @@
 /*----------------------------------------*/
 
 .aj-about {
+  &-area {
+    font-size: 72px;
+    @media #{$md,$xs} {
+      padding: 50px 0;
+    }
+  }
   &-items {
     background-color: #f7f1fc;
     padding: 20px 30px;
@@ -19,28 +25,48 @@
     }
   }
   &-img {
+    @media #{$md,$xs} {
+      margin-left: 0;
+      text-align: center;
+    }
     img {
       border-radius: 20px;
     }
   }
   &-wrrapper {
-    ul li {
-      & i {
-        margin-right: 15px;
+    & ul {
+      & li {
+        & i {
+          margin-right: 15px;
+        }
+        color: var(--aj-heading-color);
+        font-family: var(--aj-font-heading);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 27px;
+        @media #{$xs} {
+          font-size: 15px;
+        }
       }
-      color: var(--aj-heading-color);
-      font-family: var(--aj-font-heading);
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 27px;
+    }
+  }
+  &-counter {
+    @media #{$md,$xs} {
+      margin-left: 0;
     }
   }
   &-count {
+    @media #{$xs} {
+      text-align: center;
+    }
     & h2 {
       font-family: var(--aj-font-heading);
       font-size: 72px;
       letter-spacing: -2px;
+      @media #{$md} {
+        font-size: 60px;
+      }
     }
     & p {
       color: var(--aj-heading-color);
@@ -55,13 +81,16 @@
     &::before {
       position: absolute;
       content: '';
-      top: 130px;
+      top: 190px;
       left: 34px;
       width: 102%;
       height: 457px;
       background-color: var(--aj-white-color);
       border-radius: 20px;
       z-index: -1;
+      @media #{$md,$xs} {
+        display: none;
+      }
     }
   }
 }

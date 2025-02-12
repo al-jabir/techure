@@ -25,43 +25,39 @@
       &:hover {
         color: var(--aj-white-color);
       }
+      @media #{$xs} {
+        width: 100px;
+        height: 100px;
+        line-height: 98px;
+        font-size: 15px;
+      }
     }
   }
-  &-form {
+  &-input {
     margin-bottom: 50px;
-    & form {
-      & input {
-        background-color: #2e3137;
-        outline: none;
-        width: 300px;
-        height: 50px;
-        padding: 11px 30px;
-        border-radius: 99px;
+    & input {
+      background-color: #2e3137;
+      padding: 11px 30px;
+      border-radius: 99px;
+      border-bottom: none;
+      color: #fff;
+      font-size: 18px;
+      font-family: var(--aj-font-heading);
+      font-weight: 500;
+      &::placeholder {
         color: #fff;
         font-size: 18px;
         font-family: var(--aj-font-heading);
         font-weight: 500;
-        &::placeholder {
-          color: #fff;
-          font-size: 18px;
-          font-family: var(--aj-font-heading);
-          font-weight: 500;
-        }
-        &:focus {
-          border: none;
-          box-shadow: none;
-          outline: none;
-        }
       }
-      & button {
-        & i {
-          padding: 16px 30px;
-          color: #fff;
-          background-color: var(--aj-primary-color);
-          border-radius: 0 99px 99px 0;
-          right: 60px;
-          bottom: 0;
-        }
+    }
+    & button {
+      right: 0;
+      & i {
+        padding: 19px 30px;
+        color: #fff;
+        background-color: var(--aj-primary-color);
+        border-radius: 0 99px 99px 0;
       }
     }
   }
@@ -77,6 +73,11 @@
         border-radius: 50%;
         border: 1px solid var(--aj-primary-color);
         color: var(--aj-white-color);
+        transition: 0.3s;
+        cursor: pointer;
+        &:hover {
+          background-color: var(--aj-primary-color);
+        }
       }
     }
   }
@@ -84,6 +85,12 @@
     &-left {
       & p {
         color: #fff;
+        @media #{$lg} {
+          font-size: 17px;
+        }
+        @media #{$md} {
+          font-size: 15px;
+        }
       }
     }
   }
@@ -91,16 +98,35 @@
     & li {
       display: inline-block;
       margin-left: 30px;
+      @media #{$md } {
+        margin-left: 5px;
+      }
+      @media #{$xs} {
+        margin-left: 0;
+      }
       & a {
         color: #fff;
         font-size: 18px;
         font-family: var(--aj-font-heading);
         font-weight: 500;
+        transition: 0.3s;
+        &:hover {
+          color: var(--aj-primary-color);
+        }
+        @media #{$lg} {
+          font-size: 17px;
+        }
+        @media #{$md,$xs} {
+          font-size: 15px;
+        }
       }
     }
   }
   &-service {
     margin-left: 100px;
+    @media #{$md,$xs} {
+      margin-left: 0;
+    }
     &__title {
       color: var(--aj-white-color);
       font-size: 24px;
@@ -114,7 +140,12 @@
       & li {
         margin-bottom: 15px;
         & a {
+          font-size: 17px;
           color: #fff;
+          transition: 0.3s;
+          &:hover {
+            color: var(--aj-primary-color);
+          }
         }
       }
     }
@@ -144,6 +175,14 @@
         font-family: var(--aj-font-heading);
         font-weight: 700;
         line-height: 27px;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover {
+          color: var(--aj-primary-color);
+        }
+        @media #{$lg} {
+          font-size: 17px;
+        }
       }
     }
   }

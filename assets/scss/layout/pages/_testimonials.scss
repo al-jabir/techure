@@ -4,10 +4,18 @@
 /*   Testimonials */
 /*----------------------------------------*/
 .aj-testimonials {
+  &-area {
+    @media #{$md,$xs} {
+      padding: 50px 0;
+    }
+  }
   &-item {
     border: 1px solid var(--aj-primary-color-2);
     border-radius: 20px;
     padding: 40px;
+    @media #{$md,$xs} {
+      padding: 20px;
+    }
     &__info {
       &-name {
         font-family: var(--aj-font-heading);
@@ -15,12 +23,19 @@
         font-weight: 700;
         line-height: 34.91px;
         letter-spacing: -0.25px;
+        @media #{$md,$xs} {
+          font-size: 16px;
+          line-height: 10px;
+        }
       }
     }
     &__line {
       border-bottom: 1px solid #ececec;
     }
     &__thumb {
+      @media #{$xs} {
+        margin-right: 10px;
+      }
       & img {
         border-radius: 50%;
       }
@@ -31,10 +46,18 @@
         font-family: var(--aj-font-heading);
         font-weight: 500;
         line-height: 44px;
+        @media #{$md,$xs} {
+          font-size: 20px;
+          line-height: 30px;
+        }
       }
       &-rating {
         & i {
           color: #ffb34e;
+          &:last-child {
+            color: var(--aj-body-color);
+            opacity: 0.2;
+          }
         }
       }
     }
