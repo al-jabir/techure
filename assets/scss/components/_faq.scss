@@ -11,14 +11,19 @@
     }
   }
   &-content {
-    height: auto;
+    height: 614px;
     width: 740px;
     background: var(--aj-primary-color);
     content: '';
     top: 50%;
     transform: translateY(-50%);
     left: 20px;
-    border-radius: 20px;
     padding: 60px;
+    border-radius: 20px;
+    @media #{$md,$xs} {
+      width: 350px;
+      border-radius: 5px;
+      left: 0;
+    }
   }
 }
