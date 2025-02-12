@@ -11,6 +11,14 @@
       padding: 50px 0;
     }
   }
+  &-title {
+    font-size: 18px;
+    font-family: var(--aj-font-heading);
+    transition: 0.3s;
+    &:hover {
+      color: var(--aj-primary-color);
+    }
+  }
   &-items {
     background-color: #f7f1fc;
     padding: 20px 30px;

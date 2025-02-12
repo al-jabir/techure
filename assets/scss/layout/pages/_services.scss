@@ -33,6 +33,11 @@
       font-size: 24px;
       line-height: 35px;
       letter-spacing: -0.25px;
+      transition: 0.3s;
+      cursor: pointer;
+      &:hover {
+        color: var(--aj-primary-color);
+      }
     }
     & a {
       font-size: 18px;
