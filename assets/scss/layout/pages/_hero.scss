@@ -17,19 +17,18 @@
     }
   }
   &-title {
-    @media #{$md,$xs} {
-      margin-bottom: 30px;
-    }
     & span {
       font-weight: 700;
     }
     color: var(--aj-heading-color);
     text-align: center;
-    font-feature-settings: 'liga' off, 'clig' off;
     font-family: var(--aj-font-heading);
     font-size: 90px;
     font-weight: 200;
     line-height: 1;
+    @media #{$md,$xs} {
+      margin-bottom: 30px;
+    }
     @media #{$xs} {
       font-size: 46px;
       & br {

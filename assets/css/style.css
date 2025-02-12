@@ -8584,19 +8584,18 @@ img {
 .aj-hero-title {
   color: var(--aj-heading-color);
   text-align: center;
-  font-feature-settings: "liga" off, "clig" off;
   font-family: var(--aj-font-heading);
   font-size: 90px;
   font-weight: 200;
   line-height: 1;
 }
+.aj-hero-title span {
+  font-weight: 700;
+}
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .aj-hero-title {
     margin-bottom: 30px;
   }
-}
-.aj-hero-title span {
-  font-weight: 700;
 }
 @media (max-width: 767px) {
   .aj-hero-title {
