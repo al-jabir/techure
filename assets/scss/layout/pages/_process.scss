@@ -21,6 +21,9 @@
       border-top: none;
       border-right: none;
       padding: 0 0 40px 40px;
+      @media #{$xs} {
+        padding: 10px 15px;
+      }
     }
     &-3 {
       border-left: 1px solid rgba(7, 0, 14, 0.2);
@@ -28,6 +31,9 @@
       margin-left: -1px;
       margin-top: -1px;
       padding: 40px 40px 0 40px;
+      @media #{$xs} {
+        padding: 10px 15px;
+      }
     }
     &-4 {
       border-top: 1px solid rgba(7, 0, 14, 0.2);
@@ -36,6 +42,9 @@
       margin-left: -1px;
       margin-top: -1px;
       padding: 40px 40px 0 40px;
+      @media #{$xs} {
+        padding: 10px 15px;
+      }
     }
 
     &__number {
@@ -65,7 +74,7 @@
       font-weight: 700;
       line-height: 34.91px;
       letter-spacing: -0.25px;
-      @media #{$md} {
+      @media #{$lg,$md} {
         font-size: 17px;
       }
       @media #{$xs} {
