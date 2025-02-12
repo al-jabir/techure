@@ -91,6 +91,14 @@
     border-radius: 50%;
     text-align: center;
     padding: 20px 30px;
+    @media #{$xs} {
+      width: 100px;
+      height: 100px;
+      padding: 10px 20px;
+
+      left: 50%;
+      transform: translateX(-50%);
+    }
     & a {
       color: var(--aj-heading-color);
       font-family: var(--aj-font-heading);
@@ -103,6 +111,10 @@
       flex-direction: column;
       align-items: center;
       gap: 5px;
+      @media #{$xs} {
+        font-size: 12px;
+        line-height: 15px;
+      }
     }
   }
   &-shape {

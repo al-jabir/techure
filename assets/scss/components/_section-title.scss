@@ -28,8 +28,11 @@
     }
     &-4 {
       @media #{$xs} {
-        font-size: 43px;
+        font-size: 40px;
         line-height: 55px;
+        & br {
+          display: none;
+        }
       }
     }
   }

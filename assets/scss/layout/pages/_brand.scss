@@ -21,5 +21,8 @@
     font-size: 73.4071px;
     letter-spacing: -2.03908px;
     color: var(--aj-white-color-2);
+    @media #{$xs} {
+      font-size: 50px;
+    }
   }
 }
