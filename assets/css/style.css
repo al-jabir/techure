@@ -9063,25 +9063,26 @@ img {
 /*----------------------------------------*/
 /*   FAQ
 /*----------------------------------------*/
-.aj-faq-images img {
+.aj-faq-item {
+  position: relative;
+}
+.aj-faq-item__images img {
   border-radius: 20px;
 }
-.aj-faq-content {
-  height: 614px;
+.aj-faq-item__content {
+  position: absolute;
+  top: 10%;
+  height: auto;
   width: 740px;
   background: var(--aj-primary-color);
-  content: "";
-  top: 50%;
-  transform: translateY(-50%);
-  left: 20px;
   padding: 60px;
   border-radius: 20px;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
-  .aj-faq-content {
-    width: 350px;
-    border-radius: 5px;
-    left: 0;
+@media (max-width: 767px) {
+  .aj-faq-item__content {
+    position: static;
+    width: 100%;
+    padding: 10px;
   }
 }
 

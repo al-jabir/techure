@@ -5,25 +5,26 @@
 /*----------------------------------------*/
 
 .aj-faq {
-  &-images {
-    & img {
-      border-radius: 20px;
+  &-item {
+    position: relative;
+    &__images {
+      & img {
+        border-radius: 20px;
+      }
     }
-  }
-  &-content {
-    height: 614px;
-    width: 740px;
-    background: var(--aj-primary-color);
-    content: '';
-    top: 50%;
-    transform: translateY(-50%);
-    left: 20px;
-    padding: 60px;
-    border-radius: 20px;
-    @media #{$md,$xs} {
-      width: 350px;
-      border-radius: 5px;
-      left: 0;
+    &__content {
+      position: absolute;
+      top: 10%;
+      height: auto;
+      width: 740px;
+      background: var(--aj-primary-color);
+      padding: 60px;
+      border-radius: 20px;
+      @media #{$xs} {
+        position: static;
+        width: 100%;
+        padding: 10px;
+      }
     }
   }
 }
