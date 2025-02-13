@@ -23,6 +23,7 @@
       padding: 0 0 40px 40px;
       @media #{$xs} {
         padding: 10px 15px;
+        border: none;
       }
     }
     &-3 {
@@ -33,6 +34,7 @@
       padding: 40px 40px 0 40px;
       @media #{$xs} {
         padding: 10px 15px;
+        border: none;
       }
     }
     &-4 {
@@ -44,6 +46,7 @@
       padding: 40px 40px 0 40px;
       @media #{$xs} {
         padding: 10px 15px;
+        border: none;
       }
     }
 

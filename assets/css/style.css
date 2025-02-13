@@ -9107,6 +9107,7 @@ img {
 @media (max-width: 767px) {
   .aj-process-item-2 {
     padding: 10px 15px;
+    border: none;
   }
 }
 .aj-process-item-3 {
@@ -9119,6 +9120,7 @@ img {
 @media (max-width: 767px) {
   .aj-process-item-3 {
     padding: 10px 15px;
+    border: none;
   }
 }
 .aj-process-item-4 {
@@ -9132,6 +9134,7 @@ img {
 @media (max-width: 767px) {
   .aj-process-item-4 {
     padding: 10px 15px;
+    border: none;
   }
 }
 .aj-process-item__number {
