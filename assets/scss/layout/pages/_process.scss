@@ -74,6 +74,10 @@
       font-weight: 700;
       line-height: 34.91px;
       letter-spacing: -0.25px;
+      transition: 0.3s;
+      &:hover {
+        color: var(--aj-primary-color);
+      }
       @media #{$lg,$md} {
         font-size: 17px;
       }

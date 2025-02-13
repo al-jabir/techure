@@ -8760,6 +8760,10 @@ img {
   font-family: var(--aj-font-heading);
   font-weight: 700;
   letter-spacing: -0.25px;
+  transition: 0.3s;
+}
+.aj-services-item a:hover {
+  color: var(--aj-primary-color);
 }
 
 /*----------------------------------------*/
@@ -8849,6 +8853,11 @@ img {
 .aj-team-member {
   position: relative;
   text-align: center;
+  transition: 0.3s;
+}
+.aj-team-member:hover .aj-team-social {
+  opacity: 1;
+  visibility: visible;
 }
 .aj-team-img {
   position: relative;
@@ -8856,7 +8865,7 @@ img {
   height: 410px;
   border-radius: 100%;
   overflow: hidden;
-  border: 1px solid var(--aj-body-color);
+  border: 1px solid #c7c1cc;
 }
 .aj-team-img::before {
   content: "";
@@ -9156,6 +9165,10 @@ img {
   font-weight: 700;
   line-height: 34.91px;
   letter-spacing: -0.25px;
+  transition: 0.3s;
+}
+.aj-process-item__title:hover {
+  color: var(--aj-primary-color);
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
   .aj-process-item__title {

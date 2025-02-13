@@ -45,6 +45,10 @@
       font-family: var(--aj-font-heading);
       font-weight: 700;
       letter-spacing: -0.25px;
+      transition: 0.3s;
+      &:hover {
+        color: var(--aj-primary-color);
+      }
     }
   }
 }

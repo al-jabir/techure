@@ -21,6 +21,11 @@
   &-member {
     position: relative;
     text-align: center;
+    transition: 0.3s;
+    &:hover .aj-team-social {
+      opacity: 1;
+      visibility: visible;
+    }
   }
 
   &-img {
@@ -29,7 +34,7 @@
     height: 410px;
     border-radius: 100%;
     overflow: hidden;
-    border: 1px solid var(--aj-body-color);
+    border: 1px solid #c7c1cc;
     &::before {
       content: '';
       position: absolute;
