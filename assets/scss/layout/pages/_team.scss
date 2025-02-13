@@ -90,12 +90,11 @@
     width: 100%;
     padding: 10px;
     text-align: center;
-    @media #{$lg} {
+    @media #{$lg,$md} {
       bottom: 5%;
     }
-    @media #{$lg, $md} {
-      left: 45%;
-      bottom: 5%;
+    @media #{$md} {
+      left: 44%;
     }
   }
 
@@ -114,16 +113,6 @@
       &:hover {
         background-color: var(--aj-primary-color-2);
         color: var(--aj-heading-color);
-      }
-      @media #{$lg} {
-        bottom: 90%;
-        left: 42%;
-      }
-      @media #{$md} {
-        left: 41%;
-      }
-      @media #{$xs} {
-        left: 40%;
       }
     }
     &:hover .aj-team-social {

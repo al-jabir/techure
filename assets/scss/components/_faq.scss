@@ -20,6 +20,9 @@
       background: var(--aj-primary-color);
       padding: 60px;
       border-radius: 20px;
+      @media #{$md} {
+        position: static;
+      }
       @media #{$xs} {
         position: static;
         width: 100%;
