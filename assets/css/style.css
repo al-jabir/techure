@@ -8841,6 +8841,11 @@ img {
   letter-spacing: -0.25px;
   margin: 0;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .aj-team-title {
+    font-size: 15px;
+  }
+}
 .aj-team-member {
   position: relative;
   text-align: center;
@@ -8863,20 +8868,32 @@ img {
   background-color: var(--aj-primary-color);
   border-radius: 100%;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .aj-team-img {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 767px) {
+  .aj-team-img {
+    width: 100%;
+    height: 100%;
+  }
+}
 .aj-team-social {
   position: absolute;
-  top: 48%;
+  top: 46%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 40px;
-  height: 127px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
   border-radius: 100px;
   background-color: #fff;
-  padding: 10px;
+  padding: 20px 12px;
   transition: opacity 0.3s, visibility 0.3s;
   opacity: 0;
   visibility: hidden;
@@ -8904,6 +8921,17 @@ img {
   padding: 10px;
   text-align: center;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .aj-team-content {
+    bottom: 5%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .aj-team-content {
+    left: 45%;
+    bottom: 5%;
+  }
+}
 .aj-team-icon i {
   height: 50px;
   width: 50px;
@@ -8920,9 +8948,26 @@ img {
   background-color: var(--aj-primary-color-2);
   color: var(--aj-heading-color);
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .aj-team-icon i {
+    bottom: 90%;
+    left: 42%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .aj-team-icon i {
+    left: 41%;
+  }
+}
+@media (max-width: 767px) {
+  .aj-team-icon i {
+    left: 40%;
+  }
+}
 .aj-team-icon:hover .aj-team-social {
   opacity: 1;
   visibility: visible;
+  z-index: 1;
 }
 
 /*----------------------------------------*/
