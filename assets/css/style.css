@@ -8159,7 +8159,11 @@ img {
   padding: 10px 10px 30px;
   border-radius: 20px;
   border: 1px solid rgba(7, 0, 14, 0.2);
-  background-color: F7F1FC;
+  background-color: #f7f1fc;
+  transition: 0.3s;
+}
+.aj-blog-item:hover {
+  border-color: var(--aj-primary-color);
 }
 .aj-blog-item a {
   color: var(--aj-heading-color);
@@ -8167,9 +8171,11 @@ img {
   font-size: 18px;
   font-weight: 700;
   letter-spacing: -0.25px;
+}
+.aj-blog-item a i {
   transition: 0.3s;
 }
-.aj-blog-item a:hover {
+.aj-blog-item a i:hover {
   color: var(--aj-primary-color);
 }
 @media (max-width: 767px) {
@@ -8604,10 +8610,11 @@ img {
   transition: 0.3s;
 }
 .aj-hero-social li a {
+  color: var(--aj-heading-color);
   transition: 0.3s;
 }
 .aj-hero-social li a:hover {
-  color: var(--aj-heading-color);
+  color: var(--aj-primary-color);
 }
 .aj-hero-title {
   color: var(--aj-heading-color);

@@ -16,9 +16,10 @@
       padding-bottom: 70px;
       transition: 0.3s;
       & a {
+        color: var(--aj-heading-color);
         transition: 0.3s;
         &:hover {
-          color: var(--aj-heading-color);
+          color: var(--aj-primary-color);
         }
       }
     }
