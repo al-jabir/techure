@@ -3,3 +3,105 @@
 /*----------------------------------------*/
 /*   Team */
 /*----------------------------------------*/
+
+.aj-team {
+  &-title {
+    color: #fff;
+    font-family: var(--aj-font-heading);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34.91px;
+    letter-spacing: -0.25px;
+    margin: 0;
+  }
+
+  &-member {
+    position: relative;
+    text-align: center;
+  }
+
+  &-img {
+    position: relative;
+    width: 410px;
+    height: 410px;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 1px solid var(--aj-body-color);
+    &::before {
+      content: '';
+      position: absolute;
+      top: 70%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--aj-primary-color);
+      border-radius: 100%;
+    }
+  }
+
+  &-social {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 127px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 100px;
+    background-color: #fff;
+    padding: 10px;
+    transition: opacity 0.3s, visibility 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 99;
+    & a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background-color: #fff;
+      margin: 5px 0;
+      color: var(--aj-heading-color);
+      transition: 0.3s;
+      &:hover {
+        color: var(--aj-primary-color-2);
+      }
+    }
+  }
+
+  &-content {
+    position: absolute;
+    bottom: 9%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  &-icon {
+    & i {
+      height: 50px;
+      width: 50px;
+      background: #fff;
+      line-height: 50px;
+      border-radius: 50%;
+      position: absolute;
+      bottom: 105%;
+      left: 44%;
+      transition: 0.3s;
+      cursor: pointer;
+      &:hover {
+        background-color: var(--aj-primary-color-2);
+        color: var(--aj-heading-color);
+      }
+    }
+    &:hover .aj-team-social {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
