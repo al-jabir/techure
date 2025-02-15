@@ -8288,6 +8288,20 @@ img {
   cursor: pointer;
 }
 
+@keyframes ajFadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.ajFadeInDown {
+  animation: ajFadeInDown 1s ease-out forwards;
+}
+
 .header-sticky {
   position: fixed;
   top: 0;
@@ -9491,10 +9505,10 @@ img {
 /*----------------------------------------*/
 #loading {
   background-color: var(--aj-primary-color);
-  height: 100%;
+  height: 100vh;
   width: 100%;
   position: fixed;
-  z-index: 9999;
+  z-index: 99999;
   margin-top: 0px;
   top: 0px;
 }

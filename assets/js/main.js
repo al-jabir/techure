@@ -1,22 +1,17 @@
 (function ($) {
   'use strict';
 
-  // Your code here
-
   var windowOn = $(window);
 
+  // Everything inside one load function
   windowOn.on('load', function () {
     wowAnimation();
+    setTimeout(function () {
+      $('#loading').fadeOut(500);
+    }, 500); // Extra delay for smooth animation
   });
 
-  // preloader
-
-  windowOn.on('load', function () {
-    $('#loading').fadeOut(500);
-  });
-
-  // sticky wrapper
-
+  // Sticky Header
   windowOn.on('scroll', function () {
     var scroll = windowOn.scrollTop();
     if (scroll < 100) {
@@ -26,7 +21,7 @@
     }
   });
 
-  // back-to-top
+  // Back to Top Button
   var btn = $('#back-to-top');
   windowOn.scroll(function () {
     if (windowOn.scrollTop() > 300) {
@@ -39,9 +34,8 @@
     $('html, body').animate({ scrollTop: 0 }, '300');
   });
 
-  // brand
-
-  var swiper = new Swiper('.aj-brand-active', {
+  // Brand Slider (Swiper)
+  var swiper1 = new Swiper('.aj-brand-active', {
     slidesPerView: 'auto',
     spaceBetween: 80,
     freemode: true,
@@ -54,9 +48,9 @@
       disableOnInteraction: true,
     },
   });
-  // testimonials
 
-  var swiper = new Swiper('.mySwiper', {
+  // Testimonials Slider (Swiper)
+  var swiper2 = new Swiper('.mySwiper', {
     slidesPerView: 1,
     spaceBetween: 30,
     freeMode: true,
@@ -72,8 +66,7 @@
     },
   });
 
-  // wow animation
-
+  // WOW Animation
   function wowAnimation() {
     var wow = new WOW({
       boxClass: 'wow',
@@ -85,8 +78,7 @@
     wow.init();
   }
 
-  // counter
-
+  // Counter Animation
   $('.counter').counterUp({
     delay: 10,
     time: 1000,
