@@ -5,6 +5,11 @@
 /*----------------------------------------*/
 
 .aj-faq {
+  &-area {
+    @media #{$xs} {
+      padding: 0;
+    }
+  }
   &-item {
     position: relative;
     &__images {

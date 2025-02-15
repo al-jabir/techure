@@ -8735,6 +8735,11 @@ img {
   border-radius: 20px;
   border: 1px solid rgba(7, 0, 14, 0.2);
 }
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .aj-services-item {
+    padding: 20px 10px 25px 40px;
+  }
+}
 .aj-services-item__icon {
   width: 80px;
   height: 80px;
@@ -8747,6 +8752,13 @@ img {
   top: 50%;
   left: -40px;
   transform: translateY(-50%);
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .aj-services-item__icon {
+    width: 60px;
+    height: 60px;
+    left: -30px;
+  }
 }
 .aj-services-item__title {
   font-family: var(--aj-font-heading);
@@ -8972,6 +8984,11 @@ img {
 /*----------------------------------------*/
 /*   Join */
 /*----------------------------------------*/
+@media (max-width: 767px) {
+  .aj-join-area {
+    padding-bottom: 80px;
+  }
+}
 .aj-join-video img {
   border-radius: 20px;
 }
@@ -8980,6 +8997,11 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   background: var(--Gray-100, #f7f1fc);
+}
+@media (max-width: 767px) {
+  .aj-join-logo {
+    padding: 20px;
+  }
 }
 
 /*----------------------------------------*/
@@ -9227,6 +9249,11 @@ img {
 /*----------------------------------------*/
 /*   FAQ
 /*----------------------------------------*/
+@media (max-width: 767px) {
+  .aj-faq-area {
+    padding: 0;
+  }
+}
 .aj-faq-item {
   position: relative;
 }
@@ -9281,7 +9308,7 @@ img {
 }
 @media (max-width: 767px) {
   .aj-section-title__heading-3 {
-    font-size: 50px;
+    font-size: 48px;
     line-height: 55px;
   }
 }
