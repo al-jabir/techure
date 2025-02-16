@@ -43,6 +43,9 @@
       letter-spacing: -0.25px;
       transition: 0.3s;
       cursor: pointer;
+      @media #{$xs} {
+        font-size: 20px;
+      }
       &:hover {
         color: var(--aj-primary-color);
       }
@@ -54,6 +57,9 @@
       font-weight: 700;
       letter-spacing: -0.25px;
       transition: 0.3s;
+      @media #{$xs} {
+        font-size: 14px;
+      }
       &:hover {
         color: var(--aj-primary-color);
       }

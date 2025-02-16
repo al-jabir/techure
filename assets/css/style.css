@@ -8784,6 +8784,11 @@ img {
   transition: 0.3s;
   cursor: pointer;
 }
+@media (max-width: 767px) {
+  .aj-services-item__title {
+    font-size: 20px;
+  }
+}
 .aj-services-item__title:hover {
   color: var(--aj-primary-color);
 }
@@ -8794,6 +8799,11 @@ img {
   font-weight: 700;
   letter-spacing: -0.25px;
   transition: 0.3s;
+}
+@media (max-width: 767px) {
+  .aj-services-item a {
+    font-size: 14px;
+  }
 }
 .aj-services-item a:hover {
   color: var(--aj-primary-color);
