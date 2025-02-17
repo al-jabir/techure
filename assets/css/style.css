@@ -8767,11 +8767,22 @@ img {
   left: -40px;
   transform: translateY(-50%);
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .aj-services-item__icon {
     width: 60px;
     height: 60px;
     left: -30px;
+  }
+}
+@media (max-width: 767px) {
+  .aj-services-item__icon {
+    width: 45px;
+    height: 45px;
+    left: 8px;
+    top: 38px;
+  }
+  .aj-services-item__icon img {
+    width: 25px;
   }
 }
 .aj-services-item__title {
@@ -8787,6 +8798,7 @@ img {
 @media (max-width: 767px) {
   .aj-services-item__title {
     font-size: 20px;
+    margin-left: 25px;
   }
 }
 .aj-services-item__title:hover {
@@ -8879,6 +8891,11 @@ img {
 /*----------------------------------------*/
 /*   Team */
 /*----------------------------------------*/
+@media (max-width: 767px) {
+  .aj-team-area {
+    padding: 50px 0;
+  }
+}
 .aj-team-title {
   color: #fff;
   font-family: var(--aj-font-heading);
@@ -9031,6 +9048,11 @@ img {
 /*----------------------------------------*/
 /*   Why */
 /*----------------------------------------*/
+@media (max-width: 767px) {
+  .aj-why-area {
+    padding: 70px 0;
+  }
+}
 .aj-why-img img {
   border-radius: 20px;
 }
@@ -9091,6 +9113,12 @@ img {
     padding: 20px;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .aj-testimonials-item__qoute {
+    width: 40px;
+    margin-bottom: 17px;
+  }
+}
 .aj-testimonials-item__info-name {
   font-family: var(--aj-font-heading);
   font-size: 24px;
@@ -9100,8 +9128,8 @@ img {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .aj-testimonials-item__info-name {
-    font-size: 16px;
-    line-height: 10px;
+    font-size: 20px;
+    line-height: 5px;
   }
 }
 .aj-testimonials-item__line {
@@ -9170,6 +9198,11 @@ img {
   margin-top: -1px;
   padding: 40px 40px 0 40px;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .aj-process-item-3 {
+    border-left: none;
+  }
+}
 @media (max-width: 767px) {
   .aj-process-item-3 {
     padding: 10px 15px;
@@ -9201,19 +9234,13 @@ img {
   line-height: 34.91px;
   letter-spacing: -0.25px;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .aj-process-item__number {
     font-size: 17px;
   }
 }
-@media (max-width: 767px) {
-  .aj-process-item__number {
-    font-size: 13px;
-  }
-}
 .aj-process-item__head {
   display: flex;
-  align-items: center;
 }
 .aj-process-item__title {
   font-family: var(--aj-font-heading);
@@ -9226,14 +9253,9 @@ img {
 .aj-process-item__title:hover {
   color: var(--aj-primary-color);
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .aj-process-item__title {
     font-size: 17px;
-  }
-}
-@media (max-width: 767px) {
-  .aj-process-item__title {
-    font-size: 13px;
   }
 }
 .aj-process-item__content p {
@@ -9321,6 +9343,17 @@ img {
   letter-spacing: -2px;
 }
 @media (max-width: 767px) {
+  .aj-section-title__heading-x {
+    font-size: 50px !important;
+  }
+}
+@media (max-width: 767px) {
+  .aj-section-title__heading {
+    font-size: 60px;
+    line-height: 55px;
+  }
+}
+@media (max-width: 767px) {
   .aj-section-title__heading-2 {
     font-size: 65px;
   }
@@ -9371,21 +9404,29 @@ img {
   font-weight: 700;
   padding-bottom: 20px;
   color: #fff;
-  padding-left: 0;
 }
 @media (max-width: 767px) {
   .aj-accordion-button {
-    font-size: 12px;
+    font-size: 14px;
+    text-align: start;
+    padding: 10px;
   }
 }
 .aj-accordion-button::after {
   content: "-";
   height: 40px;
   width: 40px;
+  text-align: center;
   line-height: 40px;
   border-radius: 50%;
   color: #fff;
   background-color: #6851bf;
+}
+@media (max-width: 767px) {
+  .aj-accordion-button::after {
+    padding: 10px;
+    line-height: 20px;
+  }
 }
 .aj-accordion-button.collapsed {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1490196078);
@@ -9395,10 +9436,17 @@ img {
   content: "+";
   height: 40px;
   width: 40px;
+  text-align: center;
   line-height: 40px;
   border-radius: 50%;
   color: #fff;
   background-color: #6851bf;
+}
+@media (max-width: 767px) {
+  .aj-accordion-button.collapsed::after {
+    padding: 10px;
+    line-height: 20px;
+  }
 }
 .aj-accordion-button span {
   color: var(--aj-theme-color);

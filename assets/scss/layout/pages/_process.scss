@@ -32,6 +32,9 @@
       margin-left: -1px;
       margin-top: -1px;
       padding: 40px 40px 0 40px;
+      @media #{$md} {
+        border-left: none;
+      }
       @media #{$xs} {
         padding: 10px 15px;
         border: none;
@@ -60,16 +63,12 @@
       font-weight: 700;
       line-height: 34.91px;
       letter-spacing: -0.25px;
-      @media #{$md} {
+      @media #{$md,$xs} {
         font-size: 17px;
-      }
-      @media #{$xs} {
-        font-size: 13px;
       }
     }
     &__head {
       display: flex;
-      align-items: center;
     }
     &__title {
       font-family: var(--aj-font-heading);
@@ -81,11 +80,8 @@
       &:hover {
         color: var(--aj-primary-color);
       }
-      @media #{$lg,$md} {
+      @media #{$lg,$md,$xs} {
         font-size: 17px;
-      }
-      @media #{$xs} {
-        font-size: 13px;
       }
     }
     &__content {

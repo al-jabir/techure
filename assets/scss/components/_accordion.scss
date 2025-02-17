@@ -18,18 +18,24 @@
     font-weight: 700;
     padding-bottom: 20px;
     color: #fff;
-    padding-left: 0;
     @media #{$xs} {
-      font-size: 12px;
+      font-size: 14px;
+      text-align: start;
+      padding: 10px;
     }
     &::after {
       content: '-';
       height: 40px;
       width: 40px;
+      text-align: center;
       line-height: 40px;
       border-radius: 50%;
       color: #fff;
       background-color: #6851bf;
+      @media #{$xs} {
+        padding: 10px;
+        line-height: 20px;
+      }
     }
     &.collapsed {
       border-bottom: 1px solid #ffffff26;
@@ -39,10 +45,15 @@
         content: '+';
         height: 40px;
         width: 40px;
+        text-align: center;
         line-height: 40px;
         border-radius: 50%;
         color: #fff;
         background-color: #6851bf;
+        @media #{$xs} {
+          padding: 10px;
+          line-height: 20px;
+        }
       }
     }
     & span {

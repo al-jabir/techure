@@ -12,6 +12,15 @@
     font-weight: 700;
     line-height: 72px;
     letter-spacing: -2px;
+    &-x {
+      @media #{$xs} {
+        font-size: 50px !important;
+      }
+    }
+    @media #{$xs} {
+      font-size: 60px;
+      line-height: 55px;
+    }
     &-2 {
       @media #{$xs} {
         font-size: 65px;

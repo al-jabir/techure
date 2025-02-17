@@ -28,10 +28,19 @@
       top: 50%;
       left: -40px;
       transform: translateY(-50%);
-      @media #{$md,$xs} {
+      @media #{$md} {
         width: 60px;
         height: 60px;
         left: -30px;
+      }
+      @media #{$xs} {
+        & img {
+          width: 25px;
+        }
+        width: 45px;
+        height: 45px;
+        left: 8px;
+        top: 38px;
       }
     }
     &__title {
@@ -45,6 +54,7 @@
       cursor: pointer;
       @media #{$xs} {
         font-size: 20px;
+        margin-left: 25px;
       }
       &:hover {
         color: var(--aj-primary-color);

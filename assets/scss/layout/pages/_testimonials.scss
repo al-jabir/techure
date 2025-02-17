@@ -16,6 +16,12 @@
     @media #{$md,$xs} {
       padding: 20px;
     }
+    &__qoute {
+      @media #{$md,$xs} {
+        width: 40px;
+        margin-bottom: 17px;
+      }
+    }
     &__info {
       &-name {
         font-family: var(--aj-font-heading);
@@ -24,8 +30,8 @@
         line-height: 34.91px;
         letter-spacing: -0.25px;
         @media #{$md,$xs} {
-          font-size: 16px;
-          line-height: 10px;
+          font-size: 20px;
+          line-height: 5px;
         }
       }
     }
