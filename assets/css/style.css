@@ -8147,6 +8147,12 @@ img {
   display: inline-block;
 }
 
+@media (max-width: 767px) {
+  .myxs {
+    margin: 40px 0;
+  }
+}
+
 /*----------------------------------------*/
 /*   Blog
 /*----------------------------------------*/
@@ -8195,6 +8201,10 @@ img {
   font-size: 24px;
   line-height: 34.91px;
   letter-spacing: -0.25px;
+  transition: 0.3s;
+}
+.aj-blog-title a:hover {
+  color: var(--aj-primary-color);
 }
 @media (max-width: 767px) {
   .aj-blog-title a {
@@ -8878,11 +8888,18 @@ img {
 .aj-gallery-items h3 {
   font-size: 24px;
   letter-spacing: -0.25px;
+  transition: 0.3s;
+}
+.aj-gallery-items h3:hover {
+  color: var(--aj-primary-color);
 }
 @media (max-width: 767px) {
   .aj-gallery-items h3 {
     font-size: 20px;
   }
+}
+.aj-gallery-items:hover a {
+  background-color: var(--aj-primary-color);
 }
 .aj-gallery-img img {
   border-radius: 20px;

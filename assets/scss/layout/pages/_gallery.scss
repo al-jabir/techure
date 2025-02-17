@@ -32,9 +32,16 @@
     & h3 {
       font-size: 24px;
       letter-spacing: -0.25px;
+      transition: 0.3s;
+      &:hover {
+        color: var(--aj-primary-color);
+      }
       @media #{$xs} {
         font-size: 20px;
       }
+    }
+    &:hover a {
+      background-color: var(--aj-primary-color);
     }
   }
   &-img {

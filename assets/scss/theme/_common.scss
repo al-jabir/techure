@@ -74,3 +74,8 @@ img {
   width: auto;
   display: inline-block;
 }
+.myxs {
+  @media #{$xs} {
+    margin: 40px 0;
+  }
+}
