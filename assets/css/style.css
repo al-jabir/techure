@@ -8270,6 +8270,51 @@ img {
 }
 .aj-header-menu nav ul li {
   margin-right: 24px;
+  position: relative;
+}
+.aj-header-menu nav ul li .submenu {
+  position: absolute;
+  top: 185%;
+  left: 0;
+  width: 213px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  padding: 16px 0;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.aj-header-menu nav ul li .submenu li {
+  display: block;
+  margin-right: 0;
+}
+.aj-header-menu nav ul li .submenu li a {
+  display: inline-block;
+  color: #000;
+  font-size: 17px;
+  font-family: var(--aj-font-heading);
+  padding: 4px 25px;
+  transition: 0.3s;
+}
+.aj-header-menu nav ul li .submenu li a:hover {
+  color: var(--aj-primary-color);
+}
+.aj-header-menu nav ul li .submenu li .submenu {
+  left: 100%;
+  top: 185%;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.aj-header-menu nav ul li .submenu li .submenu li a {
+  text-transform: capitalize;
+}
+.aj-header-menu nav ul li .submenu li:hover .submenu {
+  top: 0%;
+  opacity: 1;
+  visibility: visible;
 }
 .aj-header-menu nav ul li a {
   color: var(--aj-heading-color);
@@ -8277,8 +8322,19 @@ img {
   font-weight: 700;
   transition: 0.3s;
 }
+.aj-header-menu nav ul li a i {
+  font-size: 10px;
+}
 .aj-header-menu nav ul li a:hover {
   color: var(--aj-primary-color);
+}
+.aj-header-menu nav ul li:hover a {
+  color: var(--aj-primary-color);
+}
+.aj-header-menu nav ul li:hover .submenu {
+  top: 180%;
+  opacity: 1;
+  visibility: visible;
 }
 .aj-header-phone a {
   color: var(--aj-heading-color);
