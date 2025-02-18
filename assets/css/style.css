@@ -8343,7 +8343,7 @@ img {
   color: var(--aj-primary-color);
   margin-right: 10px;
 }
-.aj-header-bars i {
+.aj-header-bars {
   color: var(--aj-white-color);
   height: 51px;
   width: 51px;

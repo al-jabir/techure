@@ -109,16 +109,14 @@
     }
   }
   &-bars {
-    & i {
-      color: var(--aj-white-color);
-      height: 51px;
-      width: 51px;
-      line-height: 50px;
-      text-align: center;
-      background-color: var(--aj-primary-color);
-      border-radius: 50%;
-      cursor: pointer;
-    }
+    color: var(--aj-white-color);
+    height: 51px;
+    width: 51px;
+    line-height: 50px;
+    text-align: center;
+    background-color: var(--aj-primary-color);
+    border-radius: 50%;
+    cursor: pointer;
   }
 }
 
