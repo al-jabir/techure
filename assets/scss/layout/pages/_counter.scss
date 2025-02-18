@@ -1,0 +1,65 @@
+@use '../../utils/' as *;
+
+/*----------------------------------------*/
+/*   Counter */
+/*----------------------------------------*/
+
+.aj-counter {
+  &-area {
+    @media #{$md,$xs} {
+      margin-bottom: 20px;
+    }
+  }
+  &-item {
+    @media #{$xs} {
+      text-align: center;
+    }
+    & h4 {
+      font-family: var(--aj-font-heading);
+      font-size: 72px;
+      letter-spacing: -2px;
+      @media #{$lg} {
+        font-size: 55px;
+      }
+      @media #{$md} {
+        font-size: 40px;
+        line-height: 20px;
+      }
+    }
+    & p {
+      color: var(--aj-heading-color);
+      font-size: 18px;
+      font-family: var(--aj-font-heading);
+      font-weight: 500;
+      @media #{$lg} {
+        font-size: 14px;
+      }
+      @media #{$md} {
+        font-size: 10px;
+      }
+    }
+  }
+  &-line {
+    position: relative;
+    top: 40px;
+    height: auto;
+    width: 80px;
+    opacity: 0.2;
+    border-top: 1px solid #07000e;
+    @media #{$lg} {
+      width: 60px;
+    }
+    @media #{$md} {
+      top: 20px;
+      width: 40px;
+    }
+    @media #{$xs} {
+      display: none;
+    }
+  }
+}
+.ml-80 {
+  @media #{$md} {
+    margin-left: 0;
+  }
+}

@@ -8271,10 +8271,11 @@ img {
 .aj-header-menu nav ul li {
   margin-right: 24px;
   position: relative;
+  z-index: 1000;
 }
 .aj-header-menu nav ul li .submenu {
   position: absolute;
-  top: 185%;
+  top: 100%;
   left: 0;
   width: 213px;
   background-color: #fff;
@@ -8284,7 +8285,9 @@ img {
   flex-direction: column;
   opacity: 0;
   visibility: hidden;
-  transition: 0.3s;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transform: translateY(10px);
+  z-index: 1001;
 }
 .aj-header-menu nav ul li .submenu li {
   display: block;
@@ -8296,31 +8299,32 @@ img {
   font-size: 17px;
   font-family: var(--aj-font-heading);
   padding: 4px 25px;
-  transition: 0.3s;
+  transition: color 0.3s ease-in-out;
 }
 .aj-header-menu nav ul li .submenu li a:hover {
   color: var(--aj-primary-color);
 }
 .aj-header-menu nav ul li .submenu li .submenu {
   left: 100%;
-  top: 185%;
+  top: 0;
   opacity: 0;
   visibility: hidden;
-  transition: 0.3s;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transform: translateX(10px);
 }
 .aj-header-menu nav ul li .submenu li .submenu li a {
   text-transform: capitalize;
 }
 .aj-header-menu nav ul li .submenu li:hover .submenu {
-  top: 0%;
   opacity: 1;
   visibility: visible;
+  transform: translateX(0);
 }
 .aj-header-menu nav ul li a {
   color: var(--aj-heading-color);
   font-size: 18px;
   font-weight: 700;
-  transition: 0.3s;
+  transition: color 0.3s ease-in-out;
 }
 .aj-header-menu nav ul li a i {
   font-size: 10px;
@@ -8332,9 +8336,9 @@ img {
   color: var(--aj-primary-color);
 }
 .aj-header-menu nav ul li:hover .submenu {
-  top: 180%;
   opacity: 1;
   visibility: visible;
+  transform: translateY(0);
 }
 .aj-header-phone a {
   color: var(--aj-heading-color);
@@ -8626,32 +8630,6 @@ img {
   .aj-about-wrrapper ul li {
     font-size: 15px;
   }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
-  .aj-about-counter {
-    margin-left: 0;
-  }
-}
-@media (max-width: 767px) {
-  .aj-about-count {
-    text-align: center;
-  }
-}
-.aj-about-count h2 {
-  font-family: var(--aj-font-heading);
-  font-size: 72px;
-  letter-spacing: -2px;
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .aj-about-count h2 {
-    font-size: 60px;
-  }
-}
-.aj-about-count p {
-  color: var(--aj-heading-color);
-  font-size: 18px;
-  font-family: var(--aj-font-heading);
-  font-weight: 500;
 }
 .aj-about-shape {
   position: relative;
@@ -9337,6 +9315,82 @@ img {
   font-style: normal;
   font-weight: 500;
   line-height: 28.01px;
+}
+
+/*----------------------------------------*/
+/*   Counter */
+/*----------------------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .aj-counter-area {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .aj-counter-item {
+    text-align: center;
+  }
+}
+.aj-counter-item h4 {
+  font-family: var(--aj-font-heading);
+  font-size: 72px;
+  letter-spacing: -2px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .aj-counter-item h4 {
+    font-size: 55px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .aj-counter-item h4 {
+    font-size: 40px;
+    line-height: 20px;
+  }
+}
+.aj-counter-item p {
+  color: var(--aj-heading-color);
+  font-size: 18px;
+  font-family: var(--aj-font-heading);
+  font-weight: 500;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .aj-counter-item p {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .aj-counter-item p {
+    font-size: 10px;
+  }
+}
+.aj-counter-line {
+  position: relative;
+  top: 40px;
+  height: auto;
+  width: 80px;
+  opacity: 0.2;
+  border-top: 1px solid #07000e;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .aj-counter-line {
+    width: 60px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .aj-counter-line {
+    top: 20px;
+    width: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .aj-counter-line {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .ml-80 {
+    margin-left: 0;
+  }
 }
 
 /*----------------------------------------*/

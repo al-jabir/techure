@@ -25,9 +25,10 @@
         & li {
           margin-right: 24px;
           position: relative;
+          z-index: 1000;
           & .submenu {
             position: absolute;
-            top: 185%;
+            top: 100%;
             left: 0;
             width: 213px;
             background-color: #fff;
@@ -37,7 +38,9 @@
             flex-direction: column;
             opacity: 0;
             visibility: hidden;
-            transition: 0.3s;
+            transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+            transform: translateY(10px);
+            z-index: 1001;
             & li {
               display: block;
               margin-right: 0;
@@ -47,17 +50,20 @@
                 font-size: 17px;
                 font-family: var(--aj-font-heading);
                 padding: 4px 25px;
-                transition: 0.3s;
+                transition: color 0.3s ease-in-out;
+
                 &:hover {
                   color: var(--aj-primary-color);
                 }
               }
               & .submenu {
                 left: 100%;
-                top: 185%;
+                top: 0;
                 opacity: 0;
                 visibility: hidden;
-                transition: 0.3s;
+                transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+                transform: translateX(10px);
+
                 & li {
                   & a {
                     text-transform: capitalize;
@@ -66,9 +72,9 @@
               }
               &:hover {
                 & .submenu {
-                  top: 0%;
                   opacity: 1;
                   visibility: visible;
+                  transform: translateX(0);
                 }
               }
             }
@@ -77,7 +83,8 @@
             color: var(--aj-heading-color);
             font-size: 18px;
             font-weight: 700;
-            transition: 0.3s;
+            transition: color 0.3s ease-in-out;
+
             & i {
               font-size: 10px;
             }
@@ -90,9 +97,9 @@
               color: var(--aj-primary-color);
             }
             & .submenu {
-              top: 180%;
               opacity: 1;
               visibility: visible;
+              transform: translateY(0);
             }
           }
         }
@@ -120,7 +127,7 @@
   }
 }
 
-// animtaions
+// ✅ Smooth fade-in animation
 @keyframes ajFadeInDown {
   0% {
     opacity: 0;
@@ -136,8 +143,8 @@
 .ajFadeInDown {
   animation: ajFadeInDown 1s ease-out forwards;
 }
-// sticky
 
+// ✅ Sticky Header Fix
 .header-sticky {
   position: fixed;
   top: 0;
