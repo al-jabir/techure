@@ -8153,6 +8153,10 @@ img {
   }
 }
 
+.aj-bg-purple {
+  background-color: var(--aj-primary-color);
+}
+
 /*----------------------------------------*/
 /*   Blog
 /*----------------------------------------*/
@@ -8698,6 +8702,13 @@ img {
     display: none;
   }
 }
+.aj-hero-title-2 {
+  color: var(--aj-white-color);
+  font-family: var(--aj-font-heading);
+  font-weight: 700;
+  font-size: 124.87px;
+  letter-spacing: -1.42159px;
+}
 .aj-hero-video a img {
   border-radius: 20px;
 }
@@ -8770,6 +8781,12 @@ img {
     font-size: 12px;
     line-height: 15px;
   }
+}
+.aj-hero-btn-2 {
+  background-color: var(--aj-primary-color);
+}
+.aj-hero-btn-2 a {
+  color: var(--aj-white-color);
 }
 .aj-hero-shape-1 {
   left: 9%;
@@ -9453,6 +9470,9 @@ img {
     width: 100%;
     padding: 10px;
   }
+}
+.aj-faq-item__content-2 {
+  position: static;
 }
 
 /*----------------------------------------*/

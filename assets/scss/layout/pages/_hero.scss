@@ -43,6 +43,13 @@
         display: none;
       }
     }
+    &-2 {
+      color: var(--aj-white-color);
+      font-family: var(--aj-font-heading);
+      font-weight: 700;
+      font-size: 124.87px;
+      letter-spacing: -1.42159px;
+    }
   }
 
   &-video {
@@ -121,6 +128,12 @@
       @media #{$xs} {
         font-size: 12px;
         line-height: 15px;
+      }
+    }
+    &-2 {
+      background-color: var(--aj-primary-color);
+      & a {
+        color: var(--aj-white-color);
       }
     }
   }
