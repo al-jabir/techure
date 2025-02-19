@@ -35,6 +35,10 @@
         font-size: 16px;
       }
     }
+    &-2 {
+      padding: 0;
+      border: none;
+    }
   }
   &-thumb {
     & img {
@@ -43,6 +47,15 @@
   }
   &-content {
     padding: 0 15px;
+    &-2 {
+      width: 90%;
+      padding: 30px;
+      background-color: var(--aj-white-color);
+      border-radius: 20px;
+      bottom: -127px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 
   &-title {
@@ -74,6 +87,13 @@
       & i {
         color: var(--aj-heading-color);
         margin-right: 5px;
+      }
+    }
+    &-2 {
+      & li {
+        & i {
+          color: var(--aj-primary-color);
+        }
       }
     }
   }
