@@ -11,6 +11,7 @@
     }
   }
   &-item {
+    margin-top: 20px;
     position: relative;
     &__images {
       & img {
@@ -18,6 +19,7 @@
       }
     }
     &__content {
+      margin-top: 20px;
       position: absolute;
       top: 10%;
       height: auto;
@@ -27,6 +29,7 @@
       border-radius: 20px;
       @media #{$md} {
         position: static;
+        width: 100%;
       }
       @media #{$xs} {
         position: static;
@@ -35,6 +38,10 @@
       }
       &-2 {
         position: static;
+      }
+      &-3 {
+        width: 100%;
+        background-color: transparent;
       }
     }
   }

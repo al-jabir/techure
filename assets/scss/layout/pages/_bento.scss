@@ -1,0 +1,71 @@
+@use '../../utils/' as *;
+
+/*----------------------------------------*/
+/*   Bento */
+/*----------------------------------------*/
+
+.aj-bento {
+  &-thumb {
+    & img {
+      border-radius: 20px;
+    }
+  }
+  &-content {
+    padding: 40px;
+    background-color: var(--aj-white-color);
+    border-radius: 20px;
+    border: 1px solid var(--aj-primary-color-2);
+  }
+  &-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-desc {
+    & p {
+      font-size: 32px;
+      font-family: var(--aj-font-heading);
+      font-weight: 500;
+      line-height: 44px;
+    }
+  }
+  &-rq {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-rating {
+    & i {
+      color: #ffb34e;
+      &:last-child {
+        color: var(--aj-body-color);
+        opacity: 0.2;
+      }
+    }
+  }
+  &-form {
+    background-color: var(--aj-white-color);
+    border-radius: 20px;
+    padding: 60px 40px;
+    &__select {
+      & select {
+        width: 100%;
+      }
+    }
+    &__btn {
+      & button {
+        width: 100%;
+        color: var(--aj-heading-color);
+        padding: 20px 30px;
+        background-color: var(--aj-primary-color-2);
+        border-radius: 100px;
+        text-align: center;
+        font-size: 18px;
+        font-family: var(--aj-font-heading);
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: -0.25px;
+      }
+    }
+  }
+}

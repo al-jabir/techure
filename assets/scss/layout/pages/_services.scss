@@ -9,6 +9,11 @@
       padding: 50px 0;
     }
   }
+  &-images {
+    & img {
+      border-radius: 20px;
+    }
+  }
   &-item {
     padding: 40px 30px 45px 60px;
     border-radius: 20px;
@@ -73,6 +78,39 @@
       &:hover {
         color: var(--aj-primary-color);
       }
+    }
+    &-2 {
+      padding: 30px;
+      border-color: transparent;
+      transition: 0.3s;
+      &:hover {
+        border-color: var(--aj-primary-color);
+      }
+    }
+  }
+  &-content {
+    background-color: #f7f1fc;
+    border-radius: 20px;
+    padding: 40px;
+    position: absolute;
+    top: 15%;
+    left: 45%;
+    right: 7%;
+    @media #{$lg} {
+      top: 13%;
+      left: 33%;
+      right: 5%;
+    }
+    @media #{$md} {
+      left: 15%;
+      right: 15%;
+      bottom: 0;
+      border: 1px solid tomato;
+      margin-bottom: 83%;
+    }
+    & p {
+      font-size: 18px;
+      font-weight: 500;
     }
   }
 }

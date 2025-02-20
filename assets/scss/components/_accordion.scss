@@ -12,7 +12,6 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 22px 30px;
     font-size: 18px;
     font-family: var(--aj-font-heading);
     font-weight: 700;
@@ -21,7 +20,6 @@
     @media #{$xs} {
       font-size: 14px;
       text-align: start;
-      padding: 10px;
     }
     &::after {
       content: '-';
@@ -65,12 +63,32 @@
         transform: rotate(-90deg);
       }
     }
+    &-2 {
+      color: var(--aj-heading-color);
+      &::after {
+        background-color: var(--aj-white-color);
+        color: var(--aj-primary-color);
+      }
+      &.collapsed {
+        border-bottom: 1px solid #07000e1a;
+        &::after {
+          background-color: var(--aj-white-color);
+          color: var(--aj-heading-color);
+        }
+      }
+    }
   }
   &-body {
     border-bottom: 1px solid #ffffff26;
     margin: 0;
     & p {
       color: #fff;
+    }
+    &-2 {
+      border-color: var(--aj-primary-color);
+      & p {
+        color: var(--aj-heading-color);
+      }
     }
   }
 }

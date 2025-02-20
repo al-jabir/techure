@@ -165,15 +165,14 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: #fff;
   z-index: 9999;
   -webkit-animation: 500ms ease-in-out 0s normal none 1 running ajFadeInDown;
   animation: 500ms ease-in-out 0s normal none 1 running ajFadeInDown;
   -webkit-box-shadow: 0px 4px 10px rgba(3, 4, 28, 0.1);
   box-shadow: 0px 4px 10px rgba(3, 4, 28, 0.1);
-  &.aj-header {
+  & .aj-header {
     &-black {
-      background-color: var(--aj-common-black);
+      background-color: var(--aj-heading-black);
     }
     &-white {
       background-color: #ffffff;
