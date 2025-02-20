@@ -8,6 +8,7 @@
   &-line {
     border-bottom: 1px solid #202020a8;
     margin: 40px 0;
+    opacity: 0.2;
   }
   &-btn {
     &__link {
@@ -80,6 +81,19 @@
         }
       }
     }
+    &-2 {
+      & li {
+        & i {
+          background-color: var(--aj-white-color);
+          color: var(--aj-heading-color);
+          border: none;
+          &:hover {
+            color: var(--aj-primary-color);
+            background-color: var(--aj-white-color);
+          }
+        }
+      }
+    }
   }
   &-bottom {
     &-left {
@@ -90,6 +104,11 @@
         }
         @media #{$md} {
           font-size: 15px;
+        }
+      }
+      &-2 {
+        & p {
+          color: var(--aj-heading-color);
         }
       }
     }
@@ -118,6 +137,13 @@
         }
         @media #{$md,$xs} {
           font-size: 15px;
+        }
+      }
+    }
+    &-2 {
+      & li {
+        & a {
+          color: var(--aj-heading-color);
         }
       }
     }
@@ -184,6 +210,46 @@
           font-size: 17px;
         }
       }
+    }
+  }
+  &-right {
+    &__menu {
+      display: flex;
+      & li {
+        margin-right: 25px;
+        & a {
+          color: var(--aj-heading-color);
+          transition: 0.3s;
+          & i {
+            font-size: 10px;
+          }
+          &:hover {
+            color: var(--aj-primary-color);
+          }
+        }
+      }
+      @media #{$xs} {
+        text-align: center;
+        & li {
+          margin-right: 15px;
+          & a {
+            font-size: 12px;
+            & i {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  &-shape {
+    width: 340px;
+    height: 340px;
+    border-radius: 100%;
+  }
+  &-heading {
+    @media #{$xs} {
+      font-size: 24px;
     }
   }
 }

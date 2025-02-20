@@ -129,4 +129,65 @@
       z-index: 1;
     }
   }
+  &-item {
+    &__thumb {
+      position: relative;
+      background-color: var(--aj-white-color);
+      text-align: center;
+      border-radius: 20px;
+      transition: 0.5s;
+      &:hover .aj-team-item__social {
+        bottom: 10%;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+    &__icon {
+      position: absolute;
+      bottom: -25px;
+      right: 40px;
+      & i {
+        width: 50px;
+        height: 50px;
+        border: 3px solid var(--aj-white-color);
+        border-radius: 100%;
+        padding: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f7f1fc;
+        box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
+        cursor: pointer;
+      }
+    }
+    &__social {
+      position: absolute;
+      right: 11%;
+      bottom: 0;
+      background-color: var(--aj-primary-color);
+      padding: 23px 12px;
+      display: flex;
+      flex-direction: column;
+      border-radius: 100px;
+      gap: 11px;
+      transition: 0.5s;
+      opacity: 0;
+      visibility: hidden;
+      & a {
+        color: var(--aj-white-color);
+        transition: 0.3s;
+        &:hover {
+          color: var(--aj-primary-color-2);
+        }
+      }
+    }
+    &__name {
+      & a {
+        transition: 0.3s;
+        &:hover {
+          color: var(--aj-primary-color);
+        }
+      }
+    }
+  }
 }
