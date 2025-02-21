@@ -17,9 +17,9 @@
     font-weight: 700;
     padding-bottom: 20px;
     color: #fff;
+    text-align: start;
     @media #{$xs} {
       font-size: 14px;
-      text-align: start;
     }
     &::after {
       content: '-';

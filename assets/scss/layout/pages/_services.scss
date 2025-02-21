@@ -64,6 +64,9 @@
       &:hover {
         color: var(--aj-primary-color);
       }
+      &-2 {
+        margin-left: 0;
+      }
     }
     & a {
       font-size: 18px;
@@ -86,6 +89,9 @@
       &:hover {
         border-color: var(--aj-primary-color);
       }
+      @media #{$xs} {
+        padding: 10px;
+      }
     }
   }
   &-content {
@@ -95,18 +101,15 @@
     position: absolute;
     top: 15%;
     left: 45%;
-    right: 7%;
-    @media #{$lg} {
-      top: 13%;
-      left: 33%;
-      right: 5%;
+    right: 16%;
+
+    @media #{$md,$xs} {
+      position: static;
+      left: 0;
+      right: 0;
     }
-    @media #{$md} {
-      left: 15%;
-      right: 15%;
-      bottom: 0;
-      border: 1px solid tomato;
-      margin-bottom: 83%;
+    @media #{$xs} {
+      padding: 0;
     }
     & p {
       font-size: 18px;

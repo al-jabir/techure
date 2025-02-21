@@ -8,6 +8,9 @@
   &-thumb {
     & img {
       border-radius: 20px;
+      @media #{$md,$xs} {
+        width: 100%;
+      }
     }
   }
   &-content {
@@ -19,7 +22,6 @@
   &-info {
     display: flex;
     justify-content: space-between;
-    align-items: center;
   }
   &-desc {
     & p {
@@ -27,6 +29,9 @@
       font-family: var(--aj-font-heading);
       font-weight: 500;
       line-height: 44px;
+      @media #{$xs} {
+        font-size: 20px;
+      }
     }
   }
   &-rq {
@@ -47,9 +52,16 @@
     background-color: var(--aj-white-color);
     border-radius: 20px;
     padding: 60px 40px;
+    @media #{$xs} {
+      padding: 25px 10px;
+    }
     &__select {
       & select {
         width: 100%;
+        padding: 16px 30px;
+        border: 1px solid #716f7330;
+        border-radius: 20px;
+        outline: none;
       }
     }
     &__btn {
@@ -66,6 +78,30 @@
         line-height: 20px;
         letter-spacing: -0.25px;
       }
+    }
+    & label {
+      font-size: 18px;
+      font-family: var(--aj-font-heading);
+      font-weight: 500;
+      line-height: 20px;
+      color: var(--aj-heading-color);
+      margin-bottom: 10px;
+    }
+    & input {
+      width: 100%;
+      padding: 30px 16px;
+      border: 1px solid #716f7330;
+      border-radius: 20px;
+      @media #{$xs} {
+        padding: 20px 16px;
+      }
+    }
+    & textarea {
+      border: 1px solid #716f7330;
+      border-radius: 20px;
+      height: 149px;
+      resize: none;
+      padding: 30px 17px;
     }
   }
 }

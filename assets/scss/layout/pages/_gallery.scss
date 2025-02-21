@@ -58,6 +58,16 @@
       color: #716f73;
       border-radius: 100px;
       background: #ffffff;
+      @media #{$md,$xs} {
+        font-size: 15px;
+        padding: 11px 26px;
+      }
     }
+  }
+}
+.gm {
+  margin-right: 30px;
+  @media #{$md} {
+    margin-right: 15px;
   }
 }
