@@ -9742,9 +9742,25 @@ img {
   border-radius: 20px;
   border: 1px solid var(--aj-primary-color-2);
 }
+@media (max-width: 767px) {
+  .aj-bento-content {
+    padding: 10px;
+  }
+}
 .aj-bento-info {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .aj-bento-info {
+    padding-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .aj-bento-desc {
+    margin-bottom: 10px;
+  }
 }
 .aj-bento-desc p {
   font-size: 32px;

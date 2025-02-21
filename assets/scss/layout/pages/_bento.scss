@@ -18,12 +18,22 @@
     background-color: var(--aj-white-color);
     border-radius: 20px;
     border: 1px solid var(--aj-primary-color-2);
+    @media #{$xs} {
+      padding: 10px;
+    }
   }
   &-info {
     display: flex;
     justify-content: space-between;
+    @media #{$xs} {
+      padding-top: 10px;
+      margin-bottom: 10px;
+    }
   }
   &-desc {
+    @media #{$xs} {
+      margin-bottom: 10px;
+    }
     & p {
       font-size: 32px;
       font-family: var(--aj-font-heading);
