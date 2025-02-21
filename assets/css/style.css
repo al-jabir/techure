@@ -8842,6 +8842,11 @@ img {
 /*----------------------------------------*/
 /*   Hero */
 /*----------------------------------------*/
+@media (max-width: 767px) {
+  .aj-hero-area-2 {
+    padding: 50px 0;
+  }
+}
 .aj-hero-social {
   top: 50%;
   transform: translateY(-50%);
@@ -8889,8 +8894,46 @@ img {
   font-size: 124.87px;
   line-height: 115.264px;
   letter-spacing: -1.42159px;
+  text-transform: uppercase;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .aj-hero-title-2 {
+    font-size: 100px;
+  }
+  .aj-hero-title-2 img {
+    width: 30%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .aj-hero-title-2 {
+    font-size: 80px;
+    line-height: 1;
+  }
+  .aj-hero-title-2 img {
+    width: 25%;
+  }
+}
+@media (max-width: 767px) {
+  .aj-hero-title-2 {
+    font-size: 38px;
+    line-height: 0.5;
+  }
+  .aj-hero-title-2 img {
+    width: 20%;
+  }
+}
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+  .aj-hero-title-2 img {
+    width: 30% !important;
+  }
+}
+@media (max-width: 767px) {
+  .aj-hero-title__wrapper {
+    margin-bottom: 30px;
+  }
 }
 .aj-hero-video a img {
   border-radius: 20px;
@@ -8943,7 +8986,6 @@ img {
     height: 100px;
     padding: 10px 20px;
     left: 50%;
-    transform: translateX(-50%);
   }
 }
 .aj-hero-btn a {
@@ -8983,12 +9025,28 @@ img {
   display: flex;
   gap: 30px;
 }
+@media (max-width: 767px) {
+  .aj-hero-reviews {
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+}
 .aj-hero-reviews__line {
   width: 1px;
   height: 100px;
   background-color: var(--aj-white-color);
   opacity: 0.2;
   margin: 0 30px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .aj-hero-reviews__line {
+    margin: 0 10px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .aj-hero-reviews__line {
+    margin: 0;
+  }
 }
 .aj-hero-reviews__cn {
   display: flex;
@@ -9010,9 +9068,6 @@ img {
   font-weight: 700;
   line-height: 27px;
 }
-.aj-hero-reviews__rating {
-  display: inline;
-}
 .aj-hero-reviews__star ul {
   display: flex;
   gap: 5px;
@@ -9027,6 +9082,11 @@ img {
   font-size: 14px;
   font-family: var(--aj-font-heading);
   font-weight: 400;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .aj-hero-reviews__star p {
+    font-size: 12px;
+  }
 }
 
 /*----------------------------------------*/

@@ -4,6 +4,14 @@
 /*   Hero */
 /*----------------------------------------*/
 .aj-hero {
+  &-area {
+    &-2 {
+      @media #{$xs} {
+        padding: 50px 0;
+      }
+    }
+  }
+
   &-social {
     top: 50%;
     transform: translateY(-50%);
@@ -24,6 +32,7 @@
     & span {
       font-weight: 700;
     }
+
     color: var(--aj-heading-color);
     text-align: center;
     font-family: var(--aj-font-heading);
@@ -46,8 +55,40 @@
       font-size: 124.87px;
       line-height: 115.264px;
       letter-spacing: -1.42159px;
+      text-transform: uppercase;
       display: flex;
       justify-content: space-between;
+      align-items: center;
+      @media #{$lg,$md} {
+        font-size: 100px;
+        & img {
+          width: 30%;
+        }
+      }
+      @media #{$md} {
+        font-size: 80px;
+        line-height: 1;
+        & img {
+          width: 25%;
+        }
+      }
+      @media #{$xs} {
+        font-size: 38px;
+        line-height: 0.5;
+        & img {
+          width: 20%;
+        }
+      }
+      @media #{$sm} {
+        & img {
+          width: 30% !important;
+        }
+      }
+    }
+    &__wrapper {
+      @media #{$xs} {
+        margin-bottom: 30px;
+      }
     }
   }
 
@@ -108,9 +149,8 @@
       width: 100px;
       height: 100px;
       padding: 10px 20px;
-
       left: 50%;
-      transform: translateX(-50%);
+      // transform: translateX(-50%);
     }
     & a {
       color: var(--aj-heading-color);
@@ -131,6 +171,7 @@
     }
     &-2 {
       background-color: var(--aj-primary-color);
+
       & a {
         color: var(--aj-white-color);
       }
@@ -149,12 +190,22 @@
   &-reviews {
     display: flex;
     gap: 30px;
+    @media #{$xs} {
+      gap: 10px;
+      margin-bottom: 20px;
+    }
     &__line {
       width: 1px;
       height: 100px;
       background-color: var(--aj-white-color);
       opacity: 0.2;
       margin: 0 30px;
+      @media #{$md} {
+        margin: 0 10px;
+      }
+      @media #{$md,$xs} {
+        margin: 0;
+      }
     }
     &__cn {
       display: flex;
@@ -176,9 +227,6 @@
         line-height: 27px;
       }
     }
-    &__rating {
-      display: inline;
-    }
     &__star {
       & ul {
         display: flex;
@@ -196,6 +244,9 @@
         font-size: 14px;
         font-family: var(--aj-font-heading);
         font-weight: 400;
+        @media #{$md,$xs} {
+          font-size: 12px;
+        }
       }
     }
   }
