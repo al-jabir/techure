@@ -4,14 +4,6 @@
 /*   Hero */
 /*----------------------------------------*/
 .aj-hero {
-  &-area {
-    &-2 {
-      @media #{$xs} {
-        padding: 50px 0;
-      }
-    }
-  }
-
   &-social {
     top: 50%;
     transform: translateY(-50%);

@@ -16,15 +16,26 @@
     justify-content: center;
     align-items: center;
     &:after {
+      content: '';
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
       background-color: var(--aj-heading-color);
-      opacity: 0.2;
-      z-index: -1;
+      opacity: 0.7;
     }
+  }
+  &-top {
+    padding-top: 80px;
+    padding-bottom: 240px;
+    @media #{$xs} {
+      padding-top: 40px;
+      padding-bottom: 120px;
+    }
+  }
+  &-wrapper {
+    margin-bottom: 80px;
   }
   &-text {
     & p {
@@ -33,6 +44,9 @@
       font-size: 18px;
       font-weight: 700;
       margin-bottom: 40px;
+      @media #{$md,$xs} {
+        font-size: 15px;
+      }
     }
   }
   &-no {
@@ -50,5 +64,19 @@
     font-weight: 700;
     line-height: 130%;
     text-transform: capitalize;
+    @media #{$md, $xs} {
+      font-size: 21px;
+    }
+  }
+  &-circle {
+    background: #524e56;
+    display: inline-block;
+    border-radius: 99px;
+    padding: 10px;
+  }
+}
+.ml-20 {
+  @media #{$xs} {
+    margin-left: 0;
   }
 }

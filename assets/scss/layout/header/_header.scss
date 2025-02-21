@@ -5,6 +5,13 @@
 /*----------------------------------------*/
 
 .aj-header {
+  &-transparent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
   &-area {
     background-color: #f7f1fc;
     @media #{$lg,$md,$xs} {
@@ -59,7 +66,6 @@
                 font-family: var(--aj-font-heading);
                 padding: 4px 25px;
                 transition: color 0.3s ease-in-out;
-
                 &:hover {
                   color: var(--aj-primary-color);
                 }
