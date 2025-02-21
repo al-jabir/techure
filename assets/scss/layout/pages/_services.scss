@@ -102,7 +102,10 @@
     top: 15%;
     left: 45%;
     right: 16%;
-
+    @media #{$xxlm} {
+      top: 15%;
+      right: 8%;
+    }
     @media #{$md,$xs} {
       position: static;
       left: 0;
