@@ -44,7 +44,10 @@
       font-family: var(--aj-font-heading);
       font-weight: 700;
       font-size: 124.87px;
+      line-height: 115.264px;
       letter-spacing: -1.42159px;
+      display: flex;
+      justify-content: space-between;
     }
   }
 
@@ -141,6 +144,59 @@
     &-2 {
       bottom: -5%;
       right: 0;
+    }
+  }
+  &-reviews {
+    display: flex;
+    gap: 30px;
+    &__line {
+      width: 1px;
+      height: 100px;
+      background-color: var(--aj-white-color);
+      opacity: 0.2;
+      margin: 0 30px;
+    }
+    &__cn {
+      display: flex;
+      align-items: start;
+      margin-bottom: 15px;
+      & i {
+        font-size: 20px;
+        color: var(--aj-primary-color-2);
+        margin-right: 15px;
+      }
+      & img {
+        margin-right: 15px;
+      }
+      & h5 {
+        color: var(--aj-white-color);
+        font-size: 18px;
+        font-family: var(--aj-font-heading);
+        font-weight: 700;
+        line-height: 27px;
+      }
+    }
+    &__rating {
+      display: inline;
+    }
+    &__star {
+      & ul {
+        display: flex;
+        gap: 5px;
+        & li {
+          & i {
+            font-size: 11px;
+            color: #ffb34e;
+          }
+        }
+      }
+      & p {
+        color: var(--aj-white-color);
+        text-align: justify;
+        font-size: 14px;
+        font-family: var(--aj-font-heading);
+        font-weight: 400;
+      }
     }
   }
 }

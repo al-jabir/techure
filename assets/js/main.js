@@ -3,15 +3,18 @@
 
   var windowOn = $(window);
 
-  // Everything inside one load function
   windowOn.on('load', function () {
     wowAnimation();
-    setTimeout(function () {
-      $('#loading').fadeOut(500);
-    }, 500); // Extra delay for smooth animation
+  });
+
+  // preloader
+
+  windowOn.on('load', function () {
+    $('#loading').fadeOut(500);
   });
 
   // Sticky Header
+
   windowOn.on('scroll', function () {
     var scroll = windowOn.scrollTop();
     if (scroll < 100) {
@@ -77,10 +80,4 @@
     });
     wow.init();
   }
-
-  // Counter Animation
-  $('.counter').counterUp({
-    delay: 10,
-    time: 1000,
-  });
 })(jQuery);

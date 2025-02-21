@@ -247,7 +247,21 @@
     height: 340px;
     border-radius: 100%;
   }
+  &-subheading {
+    color: var(--aj-heading-color);
+    font-size: 24px;
+    font-family: var(--aj-font-heading);
+    font-weight: 700;
+    letter-spacing: 0.25px;
+    @media #{$xs} {
+      font-size: 18px;
+    }
+  }
   &-heading {
+    font-size: 72px;
+    font-family: var(--aj-font-heading);
+    font-weight: 700;
+    letter-spacing: -2px;
     @media #{$xs} {
       font-size: 24px;
     }

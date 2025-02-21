@@ -6,8 +6,8 @@
 
 .aj-counter {
   &-area {
-    @media #{$md,$xs} {
-      margin-bottom: 20px;
+    @media #{$xs} {
+      padding: 30px 0;
     }
   }
   &-item {
@@ -59,7 +59,8 @@
   }
 }
 .ml-80 {
-  @media #{$md} {
+  @media #{$md,$xs} {
     margin-left: 0;
+    margin-bottom: 10px;
   }
 }

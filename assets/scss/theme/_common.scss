@@ -74,11 +74,6 @@ img {
   width: auto;
   display: inline-block;
 }
-.myxs {
-  @media #{$xs} {
-    margin: 40px 0;
-  }
-}
 .aj-bg-purple {
   background-color: var(--aj-primary-color);
 }

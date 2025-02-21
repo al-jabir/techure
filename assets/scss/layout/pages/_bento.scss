@@ -5,6 +5,11 @@
 /*----------------------------------------*/
 
 .aj-bento {
+  &-area {
+    @media #{$xs} {
+      padding-top: 50px;
+    }
+  }
   &-thumb {
     & img {
       border-radius: 20px;
@@ -87,6 +92,18 @@
         font-weight: 700;
         line-height: 20px;
         letter-spacing: -0.25px;
+        transition: 0.3s;
+        & img {
+          transition: 0.5s;
+        }
+        &:hover {
+          background-color: var(--aj-primary-color);
+          color: #fff;
+        }
+        &:hover img {
+          filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(317deg)
+            brightness(102%) contrast(104%);
+        }
       }
     }
     & label {

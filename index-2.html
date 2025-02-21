@@ -136,7 +136,7 @@
 
     <!-- hero area start -->
 
-    <section class="aj-hero-area-x p-relative pt-100 pb-140 aj-black-bg d-none">
+    <section class="aj-hero-area-x p-relative pt-100 pb-140 aj-black-bg">
       <div class="aj-her-shape d-none">
         <div class="aj-hero-shape-1 p-absolute">
           <img src="assets/images/shape/hs-1.png" alt="" />
@@ -147,13 +147,14 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-12">
-            <div class="aj-hero-title-wrapper mb-60">
+          <div class="col-12 mb-60">
+            <div class="aj-hero-title__wrapper">
               <h1 class="aj-hero-title aj-hero-title-2">
                 TECHNOLOGY
                 <img src="assets/images/hero/hero-2-1.png" alt="" />
               </h1>
-              <br />
+            </div>
+            <div class="aj-hero-title__wrapper">
               <h1 class="aj-hero-title aj-hero-title-2">
                 <img src="assets/images/hero/hero-2-2.png" alt="" />
                 Information
@@ -161,9 +162,9 @@
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="row align-items-center">
           <div class="col-md-6">
-            <div class="aj-hero-desc">
+            <div class="aj-hero-desc mb-35">
               <p class="text-white">
                 Information Technology is a rapidly evolving field that
                 encompasses the study and application of computing technology to
@@ -173,20 +174,53 @@
             </div>
             <div class="aj-hero-reviews">
               <div class="aj-hero-reviews__item">
-                <div class="aj-hero-reviews__cn d-flex gap-2">
+                <div class="aj-hero-reviews__cn">
                   <i class="fa-solid fa-star"></i>
-                  <h5 class="text-white">Trustipilot</h5>
+                  <h5>Trustipilot</h5>
                 </div>
-                <div class="aj-hero-reviews__rating d-flex gap-2">
-                  <img src="assets/images/icon/rating-1.png" alt="" />
-                  <div class="content">
-                    <ul class="d-flex">
+                <div class="aj-hero-reviews__rating d-flex align-items-center">
+                  <div class="aj-hero-reviews__picicon mr-12">
+                    <img
+                      src="assets/images/icon/rating-1.png"
+                      alt=""
+                      class="mr-10"
+                    />
+                  </div>
+                  <div class="aj-hero-reviews__star">
+                    <ul>
+                      <li><i class="fa-solid fa-star"></i></li>
                       <li><i class="fa-solid fa-star"></i></li>
                       <li><i class="fa-solid fa-star"></i></li>
                       <li><i class="fa-solid fa-star"></i></li>
                       <li><i class="fa-solid fa-star"></i></li>
                     </ul>
                     <p>200+ Reviews</p>
+                  </div>
+                </div>
+              </div>
+              <div class="aj-hero-reviews__line"></div>
+              <div class="aj-hero-reviews__item">
+                <div class="aj-hero-reviews__cn">
+                  <img src="assets/images/icon/google.png" alt="" />
+                  <h5>Google</h5>
+                </div>
+                <div class="aj-hero-reviews__rating d-flex align-items-center">
+                  <div class="aj-hero-reviews__picicon mr-12">
+                    <img
+                      src="assets/images/icon/rating-2.png"
+                      alt=""
+                      class="mr-10"
+                    />
+                  </div>
+                  <div class="aj-hero-reviews__star">
+                    <ul>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <p>120+ Reviews</p>
                   </div>
                 </div>
               </div>
@@ -208,7 +242,7 @@
 
     <!-- counter area start -->
 
-    <div class="aj-counter-area my-80 myxs">
+    <div class="aj-counter-area py-80 aj-winter-bg">
       <div class="container">
         <div class="row justify-content-between">
           <div class="col-md-2">
@@ -409,7 +443,7 @@
 
     <section class="aj-team-area py-150 aj-winter-bg">
       <div class="container">
-        <div class="row justify-content-center">
+        <div class="row">
           <div
             class="aj-section-title-wrapper text-center mb-60 wow ajFadeInUp"
             data-wow-duration="1s"
@@ -522,7 +556,7 @@
         <div class="row">
           <div class="col-md-6">
             <div
-              class="aj-gallery-items mb-70 wow img-custom-anim-top"
+              class="aj-gallery-items mb-30 wow img-custom-anim-top"
               data-wow-duration="2s"
               data-wow-delay=".2s"
             >
@@ -544,7 +578,7 @@
         <div class="row">
           <div class="col-md-6">
             <div
-              class="aj-gallery-items mb-70 wow img-custom-anim-top"
+              class="aj-gallery-items mb-30 wow img-custom-anim-top"
               data-wow-duration="2s"
               data-wow-delay=".2s"
             >
@@ -566,7 +600,7 @@
         <div class="row">
           <div class="col-md-6">
             <div
-              class="aj-gallery-items mb-70 wow img-custom-anim-top"
+              class="aj-gallery-items mb-30 wow img-custom-anim-top"
               data-wow-duration="2s"
               data-wow-delay=".2s"
             >
@@ -588,7 +622,7 @@
         <div class="row">
           <div class="col-md-6">
             <div
-              class="aj-gallery-items mb-70 wow img-custom-anim-top"
+              class="aj-gallery-items mb-30 wow img-custom-anim-top"
               data-wow-duration="2s"
               data-wow-delay=".2s"
             >
@@ -741,7 +775,7 @@
 
     <!-- faq area start -->
 
-    <div class="aj-faq-area pt-70 fix aj-winter-bg">
+    <div class="aj-faq-area py-150 fix aj-winter-bg">
       <div class="container">
         <div class="row g-5 align-items-center">
           <div class="col-lg-6">
@@ -878,44 +912,72 @@
 
     <!-- logo area start -->
 
-    <div class="aj-logo-area py-150 d-none">
+    <div class="aj-logo-area">
       <div class="container">
-        <div class="aj-log-top">
+        <div class="aj-log-top mt-80">
           <div
             class="row g-3 text-center align-items-center justify-content-md-center justify-content-lg-between"
           >
             <div class="col-6 col-sm-4 col-md-4 col-lg-2">
-              <img src="assets/images/brand/j1.png" alt="" class="img-fluid" />
+              <img
+                src="assets/images/brand/brand-logo-white-1.png"
+                alt=""
+                class="img-fluid"
+              />
             </div>
             <div class="col-6 col-sm-4 col-md-4 col-lg-2">
-              <img src="assets/images/brand/j2.png" alt="" class="img-fluid" />
+              <img
+                src="assets/images/brand/brand-logo-white-2.png"
+                alt=""
+                class="img-fluid"
+              />
             </div>
             <div class="col-6 col-sm-4 col-md-4 col-lg-2">
-              <img src="assets/images/brand/j3.png" alt="" class="img-fluid" />
+              <img
+                src="assets/images/brand/brand-logo-white-3.png"
+                alt=""
+                class="img-fluid"
+              />
             </div>
             <div class="col-6 col-sm-4 col-md-4 col-lg-2">
-              <img src="assets/images/brand/j4.png" alt="" class="img-fluid" />
+              <img
+                src="assets/images/brand/brand-logo-white-4.png"
+                alt=""
+                class="img-fluid"
+              />
             </div>
             <div class="col-6 col-sm-4 col-md-4 col-lg-2">
-              <img src="assets/images/brand/j5.png" alt="" class="img-fluid" />
+              <img
+                src="assets/images/brand/brand-logo-white-5.png"
+                alt=""
+                class="img-fluid"
+              />
             </div>
           </div>
         </div>
-        <div class="row mt-100">
-          <div class="col-lg-5"></div>
+        <div class="row vh-100 align-items-center justify-content-between">
+          <div class="col-lg-5">
+            <div class="aj-logo-text">
+              <span class="aj-logo-no">55%</span>
+              <p>
+                Life In Upsell Conversions Driven By <br />
+                Predictive Audience Via Cortex
+              </p>
+            </div>
+          </div>
           <div class="col-lg-7">
             <div class="aj-logo-text">
-              <h2 class="aj-logo-heading text-white">
+              <h2 class="aj-logo-heading mb-20">
                 Connecting Today, Innovating Tomorrow Enhancing Lives Through
                 Technology Digitally Driven, Globally
               </h2>
-              <p class="aj-logo-desc text-white">
+              <p class="aj-logo-desc mb-40">
                 Information Technology is a rapidly evolving field that
                 encompasses the study and application computing technology to
                 solve complex Technology is rapidly evolving field that
                 encompasses the study and application
               </p>
-              <div class="aj-logo-btn mt-30">
+              <div class="aj-logo-btn">
                 <a href="#" class="aj-btn">View All Project</a>
                 <span class="aj-btn-x"
                   ><img src="assets/images/icon/right-arrow-white.png" alt=""
@@ -931,7 +993,7 @@
 
     <!-- blog area start -->
 
-    <section class="aj-blog-area pt-150 pb-70 aj-winter-bg">
+    <section class="aj-blog-area py-150 aj-winter-bg">
       <div class="container">
         <div class="row gy-3">
           <div
