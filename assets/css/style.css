@@ -9177,10 +9177,16 @@ img {
   border-radius: 100px;
   background: #ffffff;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .aj-gallery-btn__x {
     font-size: 15px;
     padding: 11px 26px;
+  }
+}
+@media (max-width: 767px) {
+  .aj-gallery-btn__x {
+    padding: 11px 23px;
+    font-size: 13px;
   }
 }
 
@@ -9190,6 +9196,11 @@ img {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .gm {
     margin-right: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .gm {
+    margin-right: 10px;
   }
 }
 
