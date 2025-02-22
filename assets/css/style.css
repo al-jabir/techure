@@ -9466,6 +9466,11 @@ img {
   visibility: visible;
   z-index: 1;
 }
+@media (max-width: 767px) {
+  .aj-team-item {
+    padding: 15px;
+  }
+}
 .aj-team-item__thumb {
   position: relative;
   background-color: var(--aj-white-color);
@@ -9522,6 +9527,18 @@ img {
 }
 .aj-team-item__name a:hover {
   color: var(--aj-primary-color);
+}
+
+.swiper-pagination-bullet {
+  width: 60px;
+  height: 10px;
+  border-radius: 99px;
+}
+
+.swiper-pagination-bullet-active {
+  width: 110px;
+  height: 10px;
+  background-color: var(--aj-primary-color);
 }
 
 /*----------------------------------------*/

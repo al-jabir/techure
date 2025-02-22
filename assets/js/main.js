@@ -53,7 +53,7 @@
   });
 
   // Testimonials Slider (Swiper)
-  var swiper2 = new Swiper('.mySwiper', {
+  var swiper1 = new Swiper('.mySwiper', {
     slidesPerView: 1,
     spaceBetween: 30,
     freeMode: true,
@@ -64,6 +64,28 @@
     breakpoints: {
       768: {
         slidesPerView: 2,
+        spaceBetween: 40,
+      },
+    },
+  });
+
+  // Team Slider (Swiper)
+
+  var swiper2 = new Swiper('.aj-team-active', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    freeMode: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 40,
+      },
+      992: {
+        slidesPerView: 3,
         spaceBetween: 40,
       },
     },

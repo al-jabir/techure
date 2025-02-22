@@ -130,6 +130,9 @@
     }
   }
   &-item {
+    @media #{$xs} {
+      padding: 15px;
+    }
     &__thumb {
       position: relative;
       background-color: var(--aj-white-color);
@@ -190,4 +193,17 @@
       }
     }
   }
+}
+
+// Team swiper pagination
+
+.swiper-pagination-bullet {
+  width: 60px;
+  height: 10px;
+  border-radius: 99px;
+}
+.swiper-pagination-bullet-active {
+  width: 110px;
+  height: 10px;
+  background-color: var(--aj-primary-color);
 }
