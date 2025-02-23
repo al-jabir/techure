@@ -5,10 +5,31 @@
 /*----------------------------------------*/
 
 .aj-footer {
+  &-container {
+    max-width: 1560px;
+    padding: 80px 135px 30px;
+    background-color: var(--aj-white-color);
+    border-radius: 40px;
+    @media #{$lg,$md,$xs} {
+      padding: 30px;
+    }
+    @media #{$lg} {
+      max-width: 960px;
+    }
+    @media #{$md} {
+      max-width: 720px;
+    }
+    @media #{$xs} {
+      max-width: 575px;
+    }
+  }
   &-line {
     border-bottom: 1px solid #202020a8;
     margin: 40px 0;
     opacity: 0.2;
+    &-3 {
+      margin-top: 20px;
+    }
   }
   &-btn {
     &__link {
@@ -90,6 +111,18 @@
           &:hover {
             color: var(--aj-primary-color);
             background-color: var(--aj-white-color);
+          }
+        }
+      }
+    }
+    &-3 {
+      & li {
+        & i {
+          color: var(--aj-primary-color);
+          background-color: #f7f1fc;
+          border: none;
+          &:hover {
+            color: #f1f1f1;
           }
         }
       }
@@ -240,6 +273,16 @@
           }
         }
       }
+      &-3 {
+        & li {
+          & a {
+            font-size: 18px;
+            font-family: var(--aj-font-heading);
+            font-weight: 700;
+            line-height: 20px;
+          }
+        }
+      }
     }
   }
   &-shape {
@@ -270,6 +313,50 @@
     }
     @media #{$xs} {
       font-size: 24px;
+    }
+  }
+  &-middle {
+    text-align: center;
+    padding: 80px 0;
+    &__form {
+      & input {
+        color: var(--aj-heading-color);
+        font-family: var(--aj-font-heading);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28.01px;
+        border: 1px solid #ececec;
+        padding: 10px 30px;
+        border-radius: 999px;
+        width: 33%;
+        &:focus {
+          outline: none;
+          border: 1px solid #ececec;
+        }
+        &::placeholder {
+          color: var(--aj-heading-color);
+          font-family: var(--aj-font-heading);
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 28.01px;
+        }
+      }
+      & button {
+        padding: 14px 22px;
+        background: var(--aj-primary-color);
+        border-radius: 100%;
+        color: var(--aj-white-color);
+        margin-left: -4px;
+        border: 1px solid transparent;
+        transition: 0.3s;
+        &:hover {
+          background-color: #fff;
+          color: var(--aj-primary-color);
+          border-color: var(--aj-primary-color);
+        }
+      }
     }
   }
 }

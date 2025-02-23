@@ -193,6 +193,106 @@
       }
     }
   }
+  &-card {
+    border-radius: 20px;
+    border: 1px solid rgba(7, 0, 14, 0.2);
+    padding: 10px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    &__info {
+      display: flex;
+      align-items: center;
+    }
+    &__name {
+      font-size: 32px;
+      line-height: 130%;
+      text-transform: capitalize;
+      margin-right: 60px;
+      transition: 0.4s;
+    }
+    &__role {
+      margin-bottom: 0;
+      transition: 0.4s;
+    }
+    &__profile {
+      position: relative;
+      bottom: -10px;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.5s ease, visibility 0.5s ease;
+    }
+    &__icons {
+      display: flex;
+      align-items: center;
+    }
+    &__social {
+      text-align: end;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.5s ease, visibility 0.5s ease;
+      & ul {
+        display: flex;
+        justify-content: end;
+        & li {
+          margin-right: 20px;
+          & a {
+            width: 40px;
+            height: 40px;
+            color: var(--aj-white-color);
+            background-color: #6850bf;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s;
+          }
+        }
+      }
+    }
+    &__share-btn {
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 3px solid var(--aj-white-color);
+      border-radius: 100%;
+      padding: 8px;
+      color: var(--aj-heading-color);
+      background-color: #f7f1fc;
+      box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
+      cursor: pointer;
+      margin-left: 30px;
+      transition: 0.4s;
+    }
+
+    // hover
+
+    &:hover {
+      background-color: var(--aj-primary-color);
+      & .aj-team-card__name {
+        color: var(--aj-white-color);
+      }
+      & .aj-team-card__role {
+        color: var(--aj-white-color);
+      }
+      & .aj-team-card__share-btn {
+        color: var(--aj-white-color);
+        background-color: #6850bf;
+        border-color: transparent;
+      }
+      & .aj-team-card__profile {
+        opacity: 1;
+        visibility: visible;
+      }
+      & .aj-team-card__social {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
 }
 
 // Team swiper pagination
