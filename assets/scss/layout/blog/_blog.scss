@@ -31,7 +31,7 @@
           color: var(--aj-primary-color);
         }
       }
-      @media #{$xs} {
+      @media #{$lg,$md,$xs} {
         font-size: 16px;
       }
     }
@@ -39,10 +39,19 @@
       padding: 0;
       border: none;
     }
+    &-3 {
+      padding: 0;
+      border: 0;
+    }
   }
   &-thumb {
     & img {
       border-radius: 20px;
+    }
+    &-3 {
+      & img {
+        border-radius: 20px 20px 0 0;
+      }
     }
   }
   &-content {
@@ -69,6 +78,10 @@
       &:hover {
         color: var(--aj-primary-color);
       }
+      @media #{$lg,$md} {
+        line-height: 20px;
+        font-size: 16px;
+      }
       @media #{$xs} {
         font-size: 20px;
       }
@@ -84,6 +97,12 @@
       font-size: 12px;
       font-style: normal;
       font-weight: 400;
+      @media #{$lg} {
+        margin-right: 25px;
+      }
+      @media #{$xs} {
+        margin-right: 20px;
+      }
       & i {
         color: var(--aj-heading-color);
         margin-right: 5px;
@@ -94,6 +113,26 @@
         & i {
           color: var(--aj-primary-color);
         }
+      }
+    }
+    &-3 {
+      left: 20px;
+      bottom: 20px;
+    }
+    &__admin,
+    &__date {
+      background-color: #f7f1fc;
+      padding: 7px 20px;
+      border-radius: 999px;
+      font-family: var(--aj-font-heading);
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 160%;
+      & i {
+        margin-right: 5px;
+        font-size: 14px;
+        color: var(--aj-heading-color);
       }
     }
   }

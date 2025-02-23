@@ -66,6 +66,9 @@
       }
       &-2 {
         margin-left: 0;
+        @media #{$lg} {
+          font-size: 17px;
+        }
       }
     }
     & a {
@@ -75,6 +78,9 @@
       font-weight: 700;
       letter-spacing: -0.25px;
       transition: 0.3s;
+      @media #{$lg} {
+        font-size: 15px;
+      }
       @media #{$xs} {
         font-size: 14px;
       }
@@ -105,6 +111,13 @@
     @media #{$xxlm} {
       top: 15%;
       right: 8%;
+    }
+    @media #{$lg} {
+      padding: 25px;
+      position: absolute;
+      top: 12%;
+      left: 30%;
+      right: 2%;
     }
     @media #{$md,$xs} {
       position: static;

@@ -38,22 +38,23 @@
   });
 
   // Brand Slider (Swiper)
-  var swiper1 = new Swiper('.aj-brand-active', {
+  var brand = new Swiper('.aj-brand-active', {
     slidesPerView: 'auto',
     spaceBetween: 80,
-    freemode: true,
+    freeMode: true,
     centeredSlides: true,
     loop: true,
     speed: 5000,
     allowTouchMove: false,
     autoplay: {
       delay: 1,
-      disableOnInteraction: true,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
     },
   });
 
   // Testimonials Slider (Swiper)
-  var swiper1 = new Swiper('.mySwiper', {
+  var testimonials = new Swiper('.mySwiper', {
     slidesPerView: 1,
     spaceBetween: 30,
     freeMode: true,
@@ -71,12 +72,12 @@
 
   // Team Slider (Swiper)
 
-  var swiper2 = new Swiper('.aj-team-active', {
+  var team = new Swiper('.aj-team-active', {
     slidesPerView: 1,
     spaceBetween: 30,
     freeMode: true,
     pagination: {
-      el: '.swiper-pagination',
+      el: '.aj-team-pagination',
       clickable: true,
     },
     breakpoints: {
@@ -88,6 +89,17 @@
         slidesPerView: 3,
         spaceBetween: 40,
       },
+    },
+  });
+
+  // bento slider
+  var bento = new Swiper('.aj-bento-active', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    freeMode: true,
+    pagination: {
+      el: '.aj-bento-pagination',
+      clickable: true,
     },
   });
 

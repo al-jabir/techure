@@ -44,5 +44,23 @@
         background-color: transparent;
       }
     }
+    &__count {
+      padding: 40px 25px;
+      background-color: var(--aj-white-color);
+      display: block;
+      border-radius: 50%;
+      text-align: center;
+      bottom: 50px;
+      left: -8px;
+      &-no {
+        /* Heading/H1 */
+        font-family: 'DM Sans';
+        font-size: 72px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 72px; /* 100% */
+        letter-spacing: -2px;
+      }
+    }
   }
 }

@@ -262,6 +262,12 @@
     font-family: var(--aj-font-heading);
     font-weight: 700;
     letter-spacing: -2px;
+    @media #{$lg,$md} {
+      font-size: 50px;
+    }
+    @media #{$md} {
+      font-size: 35px;
+    }
     @media #{$xs} {
       font-size: 24px;
     }

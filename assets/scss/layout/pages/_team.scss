@@ -196,14 +196,16 @@
 }
 
 // Team swiper pagination
-
-.swiper-pagination-bullet {
-  width: 60px;
-  height: 10px;
-  border-radius: 99px;
-}
-.swiper-pagination-bullet-active {
-  width: 110px;
-  height: 10px;
-  background-color: var(--aj-primary-color);
+.aj-team-pagination {
+  text-align: center;
+  & .swiper-pagination-bullet {
+    width: 60px;
+    height: 10px;
+    border-radius: 99px;
+    &-active {
+      width: 110px;
+      height: 10px;
+      background-color: var(--aj-primary-color);
+    }
+  }
 }

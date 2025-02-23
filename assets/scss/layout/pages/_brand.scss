@@ -13,6 +13,13 @@
       background-color: #6850bf;
       margin: 0 41px;
     }
+    &-2 {
+      & span {
+        // padding: 20px;
+        background-color: #81bf57;
+        // border-radius: 100%;
+      }
+    }
   }
   &-title {
     font-family: var(--aj-font-heading);
@@ -21,6 +28,9 @@
     font-size: 73.4071px;
     letter-spacing: -2.03908px;
     color: var(--aj-white-color-2);
+    &-2 {
+      color: var(--aj-heading-color);
+    }
     @media #{$xs} {
       font-size: 50px;
     }

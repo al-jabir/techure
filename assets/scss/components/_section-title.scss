@@ -12,6 +12,12 @@
     font-weight: 700;
     line-height: 72px;
     letter-spacing: -2px;
+    &-s {
+      @media #{$lg} {
+        font-size: 50px;
+        margin-bottom: 15px;
+      }
+    }
     &-x {
       @media #{$xs} {
         font-size: 50px !important;
