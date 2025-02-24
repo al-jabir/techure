@@ -52,6 +52,19 @@
       border-radius: 20px;
     }
   }
+  &-images {
+    &-3 {
+      @media #{$lg} {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      @media #{$md,$xs} {
+        margin-right: 0;
+      }
+    }
+  }
   &-wrrapper {
     & ul {
       & li {

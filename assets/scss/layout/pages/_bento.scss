@@ -9,6 +9,9 @@
     @media #{$xs} {
       padding-top: 50px;
     }
+    &-3 {
+      padding-bottom: 50px;
+    }
   }
   &-thumb {
     & img {
@@ -33,6 +36,13 @@
       &-title {
         font-size: 18px;
         line-height: 28px;
+        @media #{$lg} {
+          br {
+            display: none;
+          }
+          font-size: 10px;
+          line-height: 20px;
+        }
       }
       &-link {
         color: var(--aj-heading-color);
@@ -55,6 +65,11 @@
       &-bottom {
         right: 0;
         bottom: 0;
+        & img {
+          @media #{$lg} {
+            height: 80px;
+          }
+        }
       }
       &-2 {
         background-color: #e9f6df;
@@ -78,9 +93,16 @@
       font-size: 24px;
       line-height: 34.91px;
       letter-spacing: -0.25px;
+      @media #{$lg} {
+        font-size: 18px;
+        line-height: 20.91px;
+      }
     }
   }
   &-desc {
+    @media #{$lg} {
+      margin-bottom: 25px;
+    }
     @media #{$xs} {
       margin-bottom: 10px;
     }
@@ -91,6 +113,7 @@
       line-height: 44px;
       @media #{$xs} {
         font-size: 20px;
+        line-height: 30px;
       }
     }
   }
@@ -102,6 +125,12 @@
   &-rating {
     & i {
       color: #ffb34e;
+      @media #{$lg} {
+        font-size: 15px;
+      }
+      @media #{$xs} {
+        font-size: 10px;
+      }
       &:last-child {
         color: var(--aj-body-color);
         opacity: 0.2;
@@ -224,4 +253,8 @@
       background-color: var(--aj-primary-color);
     }
   }
+}
+
+.swiper-slide.aj-bento-slide.swiper-slide-active {
+  width: 100% !important;
 }

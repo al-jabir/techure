@@ -116,7 +116,13 @@
       }
     }
     &-3 {
+      @media #{$md,$xs} {
+        display: flex;
+      }
       & li {
+        @media #{$lg} {
+          margin-right: 10px;
+        }
         & i {
           color: var(--aj-primary-color);
           background-color: #f7f1fc;
@@ -132,10 +138,11 @@
     &-left {
       & p {
         color: #fff;
+        margin-bottom: 0;
         @media #{$lg} {
           font-size: 17px;
         }
-        @media #{$md} {
+        @media #{$md,$xs} {
           font-size: 15px;
         }
       }
@@ -177,6 +184,16 @@
       & li {
         & a {
           color: var(--aj-heading-color);
+        }
+      }
+    }
+    &-3 {
+      & li {
+        @media #{$lg} {
+          margin-left: 26px;
+        }
+        @media #{$md} {
+          margin-left: 0px;
         }
       }
     }
@@ -275,11 +292,23 @@
       }
       &-3 {
         & li {
+          @media #{$lg} {
+            margin-right: 18px;
+          }
+          @media #{$xs} {
+            margin-right: 7px;
+          }
           & a {
             font-size: 18px;
             font-family: var(--aj-font-heading);
             font-weight: 700;
             line-height: 20px;
+            @media #{$lg} {
+              font-size: 16px;
+            }
+            @media #{$xs} {
+              font-size: 12px;
+            }
           }
         }
       }
@@ -318,6 +347,9 @@
   &-middle {
     text-align: center;
     padding: 80px 0;
+    @media #{$xs} {
+      padding: 30px 0;
+    }
     &__form {
       & input {
         color: var(--aj-heading-color);
@@ -330,6 +362,13 @@
         padding: 10px 30px;
         border-radius: 999px;
         width: 33%;
+        @media #{$md} {
+          width: 50%;
+        }
+        @media #{$xs} {
+          font-size: 15px;
+          width: 75%;
+        }
         &:focus {
           outline: none;
           border: 1px solid #ececec;
@@ -341,6 +380,9 @@
           font-style: normal;
           font-weight: 500;
           line-height: 28.01px;
+          @media #{$xs} {
+            font-size: 15px;
+          }
         }
       }
       & button {
