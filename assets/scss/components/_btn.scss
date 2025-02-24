@@ -40,6 +40,11 @@
         }
       }
     }
+    &-3 {
+      @media #{$md} {
+        padding: 12px;
+      }
+    }
   }
   &-3 {
     color: var(--aj-heading-color);
@@ -48,6 +53,13 @@
     &:hover {
       background-color: var(--aj-primary-color);
       color: #fff;
+    }
+    &_x {
+      display: inline-block;
+      @media #{$md} {
+        font-size: 15px;
+        padding: 10px 25px;
+      }
     }
   }
 }

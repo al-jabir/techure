@@ -124,6 +124,25 @@
     },
   });
 
+  var heroBg = new Swiper('.aj-hero-active', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: '.aj-hero-btn__next',
+      prevEl: '.aj-hero-btn__prev',
+    },
+    // breakpoints: {
+    //   768: {
+    //     slidesPerView: 2,
+    //     spaceBetween: 40,
+    //   },
+    //   992: {
+    //     slidesPerView: 3,
+    //     spaceBetween: 40,
+    //   },
+    // },
+  });
+
   // WOW Animation
   function wowAnimation() {
     var wow = new WOW({
