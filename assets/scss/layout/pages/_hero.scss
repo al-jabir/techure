@@ -4,6 +4,13 @@
 /*   Hero */
 /*----------------------------------------*/
 .aj-hero {
+  &-area {
+    &-2 {
+      @media #{$md,$xs} {
+        padding-bottom: 35px;
+      }
+    }
+  }
   &-social {
     top: 50%;
     transform: translateY(-50%);
@@ -68,13 +75,12 @@
         font-size: 38px;
         line-height: 0.5;
         & img {
-          width: 20%;
+          width: 30%;
         }
       }
-      @media #{$sm} {
-        & img {
-          width: 30% !important;
-        }
+      @media (max-width: 320px) {
+        width: 100%;
+        font-size: 32px;
       }
     }
     &__wrapper {

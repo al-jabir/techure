@@ -5,6 +5,9 @@
 /*----------------------------------------*/
 
 .aj-footer {
+  &-area {
+    padding-bottom: 40px;
+  }
   &-container {
     max-width: 1560px;
     padding: 80px 135px 30px;

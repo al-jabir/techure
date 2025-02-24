@@ -21,6 +21,16 @@
     @media #{$md,$xs} {
       padding: 20px 10px 25px 40px;
     }
+    &__text {
+      padding: 30px;
+    }
+    &__thumb {
+      & img {
+        width: 100%;
+        opacity: 0;
+        transition: 0.3s ease;
+      }
+    }
     &__icon {
       width: 80px;
       height: 80px;
@@ -99,6 +109,17 @@
         padding: 10px;
       }
     }
+    &-3 {
+      padding: 0;
+      border: 1px solid rgba(7, 0, 14, 0.2);
+      &:hover {
+        .aj-services-item__thumb {
+          & img {
+            opacity: 1;
+          }
+        }
+      }
+    }
   }
   &-content {
     background-color: #f7f1fc;
@@ -130,6 +151,18 @@
     & p {
       font-size: 18px;
       font-weight: 500;
+    }
+  }
+  &-btn {
+    &-3 {
+      padding: 15px 0 30px 30px;
+      display: block;
+      &:hover {
+        & img {
+          filter: brightness(0) saturate(100%) invert(22%) sepia(18%)
+            saturate(7169%) hue-rotate(238deg) brightness(105%) contrast(93%);
+        }
+      }
     }
   }
 }

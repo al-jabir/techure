@@ -103,6 +103,27 @@
     },
   });
 
+  // process slider
+
+  var process = new Swiper('.aj-process-active', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: '.aj-process-btn__next',
+      prevEl: '.aj-process-btn__prev',
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 40,
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      },
+    },
+  });
+
   // WOW Animation
   function wowAnimation() {
     var wow = new WOW({
