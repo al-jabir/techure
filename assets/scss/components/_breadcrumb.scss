@@ -1,0 +1,61 @@
+@use '../utils/' as *;
+
+/*----------------------------------------*/
+/*   Breadcrumbs */
+/*----------------------------------------*/
+.aj-breadcrumb {
+  &-area {
+    padding: 250px 0 170px 0;
+    background-image: url(/assets/images/breadcrumb/breadcrumb-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.85);
+      z-index: -1;
+    }
+  }
+  &-title {
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: -2px;
+    margin-bottom: 30px;
+  }
+  &-list {
+    & li {
+      display: inline-block;
+      margin: 0 3px;
+      & i {
+        color: var(--aj-heading-color);
+      }
+      & a {
+        color: var(--aj-heading-color);
+        font-family: var(--aj-font-heading);
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 34.91px;
+        letter-spacing: -0.25px;
+        transition: 0.3s;
+        &:hover {
+          color: var(--aj-primary-color);
+        }
+      }
+    }
+  }
+  &-shape {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
