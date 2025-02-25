@@ -50,6 +50,46 @@
       </div>
     </div>
 
+    <!-- offcanvas for navigation -->
+
+    <div class="aj-offcanvas">
+      <div class="aj-offcanvas-wrapper">
+        <div class="aj-offcanvas-header mb-50">
+          <a class="aj-offcanvas-logo" href="/"
+            ><img src="assets/images/logo/logo.png" alt=""
+          /></a>
+          <button class="aj-offcanvas-toggle-close">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="aj-offcanvas-menu d-xl-none mb-50">
+          <nav></nav>
+        </div>
+        <div class="aj-offcanvas-content d-none d-xl-block mb-50">
+          <h2 class="aj-offcanvas-content__title">Hello There!</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="aj-offcanvas-info mb-50">
+          <h3 class="aj-offcanvas__title">Information</h3>
+          <span><a href="#">(+888) 178 456 765</a></span>
+          <span><a href="#">deanna.curtis@example.com</a></span>
+          <span><a href="#">1901 Thornridge Cir. Shiloh, Hawaii 81063</a></span>
+        </div>
+        <div class="aj-offcanvas-social mb-50">
+          <h3 class="aj-offcanvas__title">Follow Us</h3>
+
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- offcanvas overlay -->
+
+    <div class="aj-offcanvas-overlay"></div>
+
     <!-- header area start -->
 
     <header>
@@ -67,7 +107,7 @@
             <div class="col-lg-10 col-md-3 col-6 d-flex justify-content-end">
               <div class="aj-header-left">
                 <div class="aj-header-menu aj-header-menu-2 d-none d-xl-block">
-                  <nav>
+                  <nav class="aj-mobile-menu-active">
                     <ul>
                       <li>
                         <a href="index.html"
@@ -119,7 +159,7 @@
                 </div>
               </div>
               <div class="aj-header-right d-flex align-items-center">
-                <div class="aj-header-bars">
+                <div class="aj-header-bars offcanvas-toggle">
                   <img src="assets/images/icon/menu-bars-2.png" alt="" />
                 </div>
               </div>

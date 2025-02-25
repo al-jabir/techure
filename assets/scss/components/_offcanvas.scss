@@ -1,0 +1,97 @@
+@use '../utils/' as *;
+
+/*----------------------------------------*/
+/*   Offcanvas */
+/*----------------------------------------*/
+
+.aj-offcanvas {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 100%;
+  background-color: #fff;
+  padding: 50px 40px;
+  transform: translateX(100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  overflow-y: scroll;
+  overscroll-behavior-y: contain;
+  scrollbar-width: none;
+
+  @media only screen and (max-width: 400px) {
+    width: 100%;
+    padding: 30px;
+  }
+  &-open {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__title {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & button {
+      & i {
+        font-size: 30px;
+        color: var(--aj-heading-color);
+        transition: 0.3s;
+        &:hover {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+  &-content {
+    &__title {
+      font-size: 35px;
+    }
+  }
+  &-info {
+    & span {
+      color: #222;
+      display: block;
+      margin-bottom: 5px;
+    }
+  }
+  &-social {
+    & a {
+      display: inline-block;
+      height: 50px;
+      width: 50px;
+      line-height: 50px;
+      text-align: center;
+      border: 1px solid #d6dde7a9;
+      border-radius: 100%;
+      font-size: 20px;
+      transition: 0.3s;
+      &:hover {
+        background-color: var(--aj-primary-color-2);
+        color: #fff;
+      }
+    }
+  }
+  &-overlay {
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    &-open {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}

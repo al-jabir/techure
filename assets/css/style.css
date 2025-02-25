@@ -8782,7 +8782,7 @@ img {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 9999;
+  z-index: 2;
   animation: 500ms ease-in-out 0s normal none 1 running ajFadeInDown;
   box-shadow: 0px 4px 10px rgba(3, 4, 28, 0.1);
 }
@@ -8791,6 +8791,53 @@ img {
 }
 .header-sticky .aj-header-white {
   background-color: #ffffff;
+}
+
+/*----------------------------------------*/
+/*   Offcanvas Mobile Menu */
+/*----------------------------------------*/
+.aj-offcanvas-menu ul li {
+  position: relative;
+}
+.aj-offcanvas-menu ul li a {
+  display: block;
+  padding: 10px 0;
+  font-size: 16px;
+}
+.aj-offcanvas-menu ul li a i {
+  display: none;
+}
+.aj-offcanvas-menu ul li > a {
+  border-bottom: 1px solid #eee;
+}
+.aj-offcanvas-menu ul li :not(:last-child) > a {
+  border-bottom: 1px solid rgba(1, 15, 28, 0.1);
+}
+.aj-offcanvas-menu ul li.active > a {
+  color: var(--aj-theme-color);
+}
+.aj-offcanvas-menu ul li.active > .aj-menu-close {
+  border-color: var(--aj-theme-color);
+  background-color: var(--aj-theme-color);
+  color: #fff;
+  transition: 0.3s;
+}
+.aj-offcanvas-menu ul li.active > .aj-menu-close i {
+  transform: rotate(90deg);
+}
+.aj-offcanvas-menu ul li .submenu {
+  display: none;
+  padding-left: 20px;
+}
+.aj-offcanvas-menu ul li .aj-menu-close {
+  position: absolute;
+  top: 9px;
+  right: 0;
+  font-size: 14px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #eee;
 }
 
 /*----------------------------------------*/
@@ -11358,6 +11405,12 @@ img {
   margin-bottom: 30px;
 }
 
+@media (max-width: 767px) {
+  .ml-inner {
+    margin-left: 0;
+  }
+}
+
 /*----------------------------------------*/
 /*   Project Details */
 /*----------------------------------------*/
@@ -12942,6 +12995,132 @@ img {
 }
 .aj-sidebar-post__item-desc a:hover {
   color: var(--aj-primary-color);
+}
+
+/*----------------------------------------*/
+/*   Search Bars */
+/*----------------------------------------*/
+.aj-header-search-bar {
+  height: 400px;
+  background: #fff;
+  top: -100%;
+  right: 0;
+  left: 0;
+  position: fixed;
+  transition: 0.4s;
+  z-index: 99999;
+}
+.aj-header-search-bar.aj-search-open {
+  top: 0;
+}
+
+.aj-search-form-box form {
+  position: relative;
+}
+.aj-search-form-box form button {
+  position: absolute;
+  top: 13px;
+  right: 0;
+}
+
+.aj-search-close {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  font-weight: 300;
+  color: #222;
+  text-align: center;
+  line-height: 40px;
+}
+
+/*----------------------------------------*/
+/*   Offcanvas */
+/*----------------------------------------*/
+.aj-offcanvas {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 100%;
+  background-color: #fff;
+  padding: 50px 40px;
+  transform: translateX(100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  overflow-y: scroll;
+  overscroll-behavior-y: contain;
+  scrollbar-width: none;
+}
+@media only screen and (max-width: 400px) {
+  .aj-offcanvas {
+    width: 100%;
+    padding: 30px;
+  }
+}
+.aj-offcanvas-open {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+.aj-offcanvas__title {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.aj-offcanvas-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.aj-offcanvas-header button i {
+  font-size: 30px;
+  color: var(--aj-heading-color);
+  transition: 0.3s;
+}
+.aj-offcanvas-header button i:hover {
+  transform: rotate(180deg);
+}
+.aj-offcanvas-content__title {
+  font-size: 35px;
+}
+.aj-offcanvas-info span {
+  color: #222;
+  display: block;
+  margin-bottom: 5px;
+}
+.aj-offcanvas-social a {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid rgba(214, 221, 231, 0.662745098);
+  border-radius: 100%;
+  font-size: 20px;
+  transition: 0.3s;
+}
+.aj-offcanvas-social a:hover {
+  background-color: var(--aj-primary-color-2);
+  color: #fff;
+}
+.aj-offcanvas-overlay {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+}
+.aj-offcanvas-overlay-open {
+  opacity: 1;
+  visibility: visible;
 }
 
 /*# sourceMappingURL=style.css.map */

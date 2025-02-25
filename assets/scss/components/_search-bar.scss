@@ -1,0 +1,43 @@
+@use '../utils/' as *;
+
+/*----------------------------------------*/
+/*   Search Bars */
+/*----------------------------------------*/
+
+.aj-header-search-bar {
+  height: 400px;
+  background: #fff;
+  top: -100%;
+  right: 0;
+  left: 0;
+  position: fixed;
+  transition: 0.4s;
+  z-index: 99999;
+  &.aj-search-open {
+    top: 0;
+  }
+}
+
+.aj-search-form-box {
+  & form {
+    position: relative;
+    & button {
+      position: absolute;
+      top: 13px;
+      right: 0;
+    }
+  }
+}
+
+.aj-search-close {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  font-weight: 300;
+  color: #222;
+  text-align: center;
+  line-height: 40px;
+}
