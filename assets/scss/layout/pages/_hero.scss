@@ -323,8 +323,8 @@
   }
   &-contact {
     position: absolute;
-    right: 5%;
-    bottom: 9%;
+    right: 18%;
+    bottom: 8%;
     background-color: var(--aj-primary-color);
     border-radius: 20px;
     padding: 50px;
@@ -366,4 +366,24 @@
       }
     }
   }
+}
+
+// swiper slider buttons
+.aj-hero-btn__prev {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9;
+  width: 30px;
+  height: 30px;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  color: var(--aj-heading-color);
+  border-radius: 50%;
+  cursor: pointer;
+  background: white;
 }

@@ -1,0 +1,108 @@
+@use '../utils/' as *;
+
+/*----------------------------------------*/
+/*   Sidebar */
+/*----------------------------------------*/
+
+.aj-sidebar {
+  &-ct,
+  &-contact {
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+  }
+  &-ct {
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #c7c1cc;
+      padding-bottom: 10px;
+    }
+    &__item {
+      background-color: var(--aj-white-color);
+      margin: 30px 0;
+      padding: 10px 30px;
+      border-radius: 100px;
+    }
+    &__link {
+      display: flex;
+      justify-content: space-between;
+      &:hover {
+        .aj-sidebar-ct__name,
+        .aj-sidebar-ct__number {
+          color: var(--aj-primary-color);
+        }
+      }
+    }
+    &__name,
+    &__number {
+      color: var(--aj-body-color);
+      font-size: 18px;
+      font-weight: var(--aj-font-heading);
+      font-weight: 500;
+      transition: 0.3s;
+    }
+  }
+  &-contact {
+    background-color: var(--aj-primary-color);
+    text-align: center;
+    &__logo {
+      display: block;
+      margin-bottom: 40px;
+    }
+    &__help {
+      color: var(--aj-white-color);
+      font-family: var(--aj-font-heading);
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 27px;
+      margin-bottom: 20px;
+    }
+    &__phone {
+      color: var(--aj-white-color);
+      font-family: var(--aj-font-heading);
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 130%;
+      text-transform: capitalize;
+      margin-bottom: 40px;
+    }
+    &__btn {
+      &-link {
+        color: var(--aj-white-color);
+        font-family: var(--aj-font-heading);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: -0.25px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 20px 30px;
+        display: inline-block;
+        transition: 0.3s ease-in-out;
+        &:hover {
+          color: var(--aj-heading-color);
+        }
+      }
+      &-icon {
+        display: inline-block;
+        padding: 10px 15px;
+        border-radius: 100%;
+        background: rgba(255, 255, 255, 0.1);
+        margin-left: -5px;
+        transition: 0.3s ease-in-out;
+        &:hover {
+          svg {
+            path {
+              fill: var(--aj-heading-color);
+            }
+          }
+        }
+      }
+    }
+  }
+}

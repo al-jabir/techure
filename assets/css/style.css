@@ -9408,8 +9408,8 @@ img {
 }
 .aj-hero-contact {
   position: absolute;
-  right: 5%;
-  bottom: 9%;
+  right: 18%;
+  bottom: 8%;
   background-color: var(--aj-primary-color);
   border-radius: 20px;
   padding: 50px;
@@ -9457,6 +9457,25 @@ img {
   .aj-hero-contact__btn {
     margin-top: 20px;
   }
+}
+
+.aj-hero-btn__prev {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9;
+  width: 30px;
+  height: 30px;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  color: var(--aj-heading-color);
+  border-radius: 50%;
+  cursor: pointer;
+  background: white;
 }
 
 /*----------------------------------------*/
@@ -11001,6 +11020,46 @@ img {
 }
 
 /*----------------------------------------*/
+/*   Service Details */
+/*----------------------------------------*/
+.aj-service-title__heading {
+  font-size: 32px;
+  line-height: 130%;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .aj-service-title__heading {
+    font-size: 27px;
+  }
+}
+@media (max-width: 320px) {
+  .aj-service-title__heading {
+    font-size: 22px;
+  }
+}
+.aj-service-title__heading-2 {
+  font-size: 24px;
+}
+@media (max-width: 320px) {
+  .aj-service-title__heading-2 {
+    font-size: 18px;
+  }
+}
+.aj-service-details__thumb {
+  margin-bottom: 30px;
+}
+.aj-service-details__thumb img {
+  border-radius: 20px;
+}
+.aj-service-desc {
+  margin-bottom: 30px;
+}
+
+/*----------------------------------------*/
+/*   Project Details */
+/*----------------------------------------*/
+/*----------------------------------------*/
 /*   Btn
 /*----------------------------------------*/
 .aj-btn {
@@ -11371,7 +11430,7 @@ img {
 }
 
 /*----------------------------------------*/
-/*   Btn
+/*   Back to top */
 /*----------------------------------------*/
 #back-to-top {
   width: 50px;
@@ -12285,6 +12344,98 @@ img {
   position: absolute;
   right: 0;
   bottom: 0;
+}
+
+/*----------------------------------------*/
+/*   Sidebar */
+/*----------------------------------------*/
+.aj-sidebar-ct, .aj-sidebar-contact {
+  padding: 40px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+.aj-sidebar-ct__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #c7c1cc;
+  padding-bottom: 10px;
+}
+.aj-sidebar-ct__item {
+  background-color: var(--aj-white-color);
+  margin: 30px 0;
+  padding: 10px 30px;
+  border-radius: 100px;
+}
+.aj-sidebar-ct__link {
+  display: flex;
+  justify-content: space-between;
+}
+.aj-sidebar-ct__link:hover .aj-sidebar-ct__name,
+.aj-sidebar-ct__link:hover .aj-sidebar-ct__number {
+  color: var(--aj-primary-color);
+}
+.aj-sidebar-ct__name, .aj-sidebar-ct__number {
+  color: var(--aj-body-color);
+  font-size: 18px;
+  font-weight: var(--aj-font-heading);
+  font-weight: 500;
+  transition: 0.3s;
+}
+.aj-sidebar-contact {
+  background-color: var(--aj-primary-color);
+  text-align: center;
+}
+.aj-sidebar-contact__logo {
+  display: block;
+  margin-bottom: 40px;
+}
+.aj-sidebar-contact__help {
+  color: var(--aj-white-color);
+  font-family: var(--aj-font-heading);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27px;
+  margin-bottom: 20px;
+}
+.aj-sidebar-contact__phone {
+  color: var(--aj-white-color);
+  font-family: var(--aj-font-heading);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+}
+.aj-sidebar-contact__btn-link {
+  color: var(--aj-white-color);
+  font-family: var(--aj-font-heading);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.25px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px 30px;
+  display: inline-block;
+  transition: 0.3s ease-in-out;
+}
+.aj-sidebar-contact__btn-link:hover {
+  color: var(--aj-heading-color);
+}
+.aj-sidebar-contact__btn-icon {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  margin-left: -5px;
+  transition: 0.3s ease-in-out;
+}
+.aj-sidebar-contact__btn-icon:hover svg path {
+  fill: var(--aj-heading-color);
 }
 
 /*# sourceMappingURL=style.css.map */

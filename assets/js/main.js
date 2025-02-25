@@ -127,6 +127,10 @@
   var heroBg = new Swiper('.aj-hero-active', {
     slidesPerView: 1,
     spaceBetween: 20,
+    speed: 400,
+    touchRatio: 0.2,
+    slideToClickedSlide: true,
+    loop: true,
     navigation: {
       nextEl: '.aj-hero-btn__next',
       prevEl: '.aj-hero-btn__prev',
@@ -142,6 +146,33 @@
     //   },
     // },
   });
+
+  // var sliderThumbs = new Swiper('.mySwiper', {
+  //   // direction: 'vertical',
+  //   direction: 'horizontal',
+  //   speed: 400,
+  //   touchRatio: 0.2,
+  //   slideToClickedSlide: true,
+  //   loop: true,
+  //   slidesPerView: 1,
+
+  //   loopedSlides: 4,
+  //   navigation: {
+  //     nextEl: '.upk-button-next',
+  //     prevEl: '.upk-button-prev',
+  //   },
+  //   breakpoints: {
+  //     0: {
+  //       slidesPerView: 1,
+  //     },
+  //     768: {
+  //       slidesPerView: 1,
+  //     },
+  //     1024: {
+  //       slidesPerView: 1,
+  //     },
+  //   },
+  // });
 
   // WOW Animation
   function wowAnimation() {
