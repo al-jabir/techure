@@ -8814,11 +8814,11 @@ img {
   border-bottom: 1px solid rgba(1, 15, 28, 0.1);
 }
 .aj-offcanvas-menu ul li.active > a {
-  color: var(--aj-theme-color);
+  color: var(--aj-primary-color);
 }
 .aj-offcanvas-menu ul li.active > .aj-menu-close {
-  border-color: var(--aj-theme-color);
-  background-color: var(--aj-theme-color);
+  border-color: var(--aj-primary-color);
+  background-color: var(--aj-primary-color);
   color: #fff;
   transition: 0.3s;
 }

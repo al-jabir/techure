@@ -28,11 +28,11 @@
 
         &.active {
           & > a {
-            color: var(--aj-theme-color);
+            color: var(--aj-primary-color);
           }
           & > .aj-menu-close {
-            border-color: var(--aj-theme-color);
-            background-color: var(--aj-theme-color);
+            border-color: var(--aj-primary-color);
+            background-color: var(--aj-primary-color);
             color: #fff;
             transition: 0.3s;
             & i {
